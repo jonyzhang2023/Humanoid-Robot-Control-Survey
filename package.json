@@ -1,0 +1,27 @@
+{
+  "name": "world-model-survey",
+  "version": "1.0.0",
+  "description": "世界模型（World Model）完整研究报告",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "merge": "bash scripts/merge.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoenHune/world-model-survey.git"
+  },
+  "keywords": [
+    "world-model",
+    "survey",
+    "research"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "markdown-it-mathjax3": "^4.3.2",
+    "vitepress": "^1.6.4"
+  }
+}

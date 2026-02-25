@@ -1,0 +1,513 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 2200" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', sans-serif">
+  <defs>
+    <!-- 方向色彩 -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <linearGradient id="era1Grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </linearGradient>
+    <linearGradient id="era2Grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+    <linearGradient id="era3Grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#db2777"/>
+    </linearGradient>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- 方向图标标记色 -->
+    <!-- D1-RL: 蓝 #3b82f6  D2-视频: 紫 #8b5cf6  D3-驾驶: 绿 #10b981  D4-具身: 橙 #f59e0b
+         D5-LLM: 红 #ef4444  D6-JEPA: 青 #06b6d4  D7-交互: 粉 #ec4899  D8-3D: 靛 #6366f1  D9-行业: 灰 #6b7280 -->
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1800" height="2200" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- 标题 -->
+  <text x="900" y="55" text-anchor="middle" font-size="28" font-weight="700" fill="#1e293b">世界模型（World Models）发展历程与里程碑</text>
+  <text x="900" y="82" text-anchor="middle" font-size="14" fill="#64748b">1943 认知科学奠基 → 2026 基础世界模型时代  |  9 大研究方向  |  200+ 篇论文</text>
+
+  <!-- 图例 -->
+  <g transform="translate(90, 100)">
+    <rect x="0" y="0" width="1620" height="36" rx="8" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+    <circle cx="30" cy="18" r="7" fill="#3b82f6"/><text x="44" y="23" font-size="11" fill="#475569">D1 RL决策</text>
+    <circle cx="160" cy="18" r="7" fill="#8b5cf6"/><text x="174" y="23" font-size="11" fill="#475569">D2 视频生成</text>
+    <circle cx="310" cy="18" r="7" fill="#10b981"/><text x="324" y="23" font-size="11" fill="#475569">D3 自动驾驶</text>
+    <circle cx="460" cy="18" r="7" fill="#f59e0b"/><text x="474" y="23" font-size="11" fill="#475569">D4 具身智能</text>
+    <circle cx="610" cy="18" r="7" fill="#ef4444"/><text x="624" y="23" font-size="11" fill="#475569">D5 LLM推理</text>
+    <circle cx="760" cy="18" r="7" fill="#06b6d4"/><text x="774" y="23" font-size="11" fill="#475569">D6 JEPA表征</text>
+    <circle cx="910" cy="18" r="7" fill="#ec4899"/><text x="924" y="23" font-size="11" fill="#475569">D7 交互仿真</text>
+    <circle cx="1070" cy="18" r="7" fill="#6366f1"/><text x="1084" y="23" font-size="11" fill="#475569">D8 3D/4D</text>
+    <circle cx="1210" cy="18" r="7" fill="#6b7280"/><text x="1224" y="23" font-size="11" fill="#475569">D9 行业应用</text>
+    <text x="1400" y="23" font-size="11" fill="#475569">⭐ = 里程碑</text>
+    <rect x="1500" y="8" width="20" height="20" rx="4" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/><text x="1528" y="23" font-size="11" fill="#475569">= 重要</text>
+  </g>
+
+  <!-- ================================ -->
+  <!-- 第一纪元：早期奠基 1943–2017 -->
+  <!-- ================================ -->
+  <g transform="translate(0, 160)">
+    <!-- 纪元标签 -->
+    <rect x="60" y="0" width="1680" height="44" rx="8" fill="url(#era1Grad)"/>
+    <text x="900" y="28" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">第一纪元：早期奠基（1943 – 2017）</text>
+    <text x="1680" y="28" text-anchor="end" font-size="12" fill="#e2e8f0">认知科学 → 神经网络 → 模型基 RL 萌芽</text>
+
+    <!-- 时间轴主线 -->
+    <line x1="120" y1="70" x2="1700" y2="70" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- 节点 -->
+    <!-- 1943 Craik -->
+    <g transform="translate(170, 70)">
+      <circle r="10" fill="#64748b" stroke="#fff" stroke-width="2"/>
+      <text x="0" y="-20" text-anchor="middle" font-size="12" font-weight="700" fill="#334155">1943</text>
+      <text x="0" y="-36" text-anchor="middle" font-size="11" fill="#64748b">Craik 心智模型 ⭐</text>
+    </g>
+
+    <!-- 1989 Schmidhuber -->
+    <g transform="translate(420, 70)">
+      <circle r="10" fill="#3b82f6" stroke="#fff" stroke-width="2"/>
+      <text x="0" y="32" text-anchor="middle" font-size="12" font-weight="700" fill="#334155">1989</text>
+      <text x="0" y="48" text-anchor="middle" font-size="11" fill="#64748b">Schmidhuber: RNN世界模型 ⭐</text>
+    </g>
+
+    <!-- 2011 PILCO -->
+    <g transform="translate(650, 70)">
+      <circle r="8" fill="#3b82f6" stroke="#fff" stroke-width="2"/>
+      <text x="0" y="-20" text-anchor="middle" font-size="12" font-weight="700" fill="#334155">2011</text>
+      <text x="0" y="-36" text-anchor="middle" font-size="11" fill="#64748b">PILCO 高斯过程</text>
+    </g>
+
+    <!-- 2015 On Learning to Think -->
+    <g transform="translate(880, 70)">
+      <circle r="8" fill="#3b82f6" stroke="#fff" stroke-width="2"/>
+      <text x="0" y="32" text-anchor="middle" font-size="12" font-weight="700" fill="#334155">2015</text>
+      <text x="0" y="48" text-anchor="middle" font-size="11" fill="#64748b">Schmidhuber: 在想象中思考</text>
+    </g>
+
+    <!-- 2016 Predictron -->
+    <g transform="translate(1120, 70)">
+      <circle r="8" fill="#3b82f6" stroke="#fff" stroke-width="2"/>
+      <text x="0" y="-20" text-anchor="middle" font-size="12" font-weight="700" fill="#334155">2016</text>
+      <text x="0" y="-36" text-anchor="middle" font-size="11" fill="#64748b">Predictron (DeepMind)</text>
+    </g>
+
+    <!-- 2017 I2A -->
+    <g transform="translate(1380, 70)">
+      <circle r="8" fill="#3b82f6" stroke="#fff" stroke-width="2"/>
+      <text x="0" y="32" text-anchor="middle" font-size="12" font-weight="700" fill="#334155">2017</text>
+      <text x="0" y="48" text-anchor="middle" font-size="11" fill="#64748b">I2A 想象力增强智能体</text>
+    </g>
+  </g>
+
+  <!-- ================================ -->
+  <!-- 第二纪元：经典世界模型 2018–2022 -->
+  <!-- ================================ -->
+  <g transform="translate(0, 320)">
+    <rect x="60" y="0" width="1680" height="44" rx="8" fill="url(#era2Grad)"/>
+    <text x="900" y="28" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">第二纪元：经典世界模型（2018 – 2022）</text>
+    <text x="1680" y="28" text-anchor="end" font-size="12" fill="#e2e8f0">VAE-RNN → Dreamer → MuZero → JEPA 范式提出</text>
+
+    <line x1="120" y1="70" x2="1700" y2="70" stroke="#6366f1" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- 2018 World Models ⭐ -->
+    <g transform="translate(200, 70)">
+      <rect x="-80" y="-65" width="160" height="42" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="0" y="-48" text-anchor="middle" font-size="11" font-weight="700" fill="#92400e">⭐ World Models</text>
+      <text x="0" y="-34" text-anchor="middle" font-size="10" fill="#92400e">Ha &amp; Schmidhuber · VAE+RNN+C</text>
+      <circle r="12" fill="#3b82f6" stroke="#fff" stroke-width="3" filter="url(#glow)"/>
+      <text x="0" y="30" text-anchor="middle" font-size="12" font-weight="700" fill="#334155">2018</text>
+    </g>
+
+    <!-- 2019 PlaNet + MuZero -->
+    <g transform="translate(440, 70)">
+      <circle r="8" fill="#3b82f6" stroke="#fff" stroke-width="2"/>
+      <text x="0" y="30" text-anchor="middle" font-size="12" font-weight="700" fill="#334155">2019</text>
+      <text x="0" y="46" text-anchor="middle" font-size="11" fill="#64748b">PlaNet / DreamerV1</text>
+    </g>
+
+    <!-- 2020 MuZero + DreamerV2 -->
+    <g transform="translate(680, 70)">
+      <rect x="-85" y="-65" width="170" height="42" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="0" y="-48" text-anchor="middle" font-size="11" font-weight="700" fill="#92400e">⭐ MuZero (Nature 2020)</text>
+      <text x="0" y="-34" text-anchor="middle" font-size="10" fill="#92400e">DeepMind · 统治棋类+Atari</text>
+      <circle r="12" fill="#3b82f6" stroke="#fff" stroke-width="3" filter="url(#glow)"/>
+      <text x="0" y="30" text-anchor="middle" font-size="12" font-weight="700" fill="#334155">2020</text>
+    </g>
+
+    <!-- 2021 DreamerV2 -->
+    <g transform="translate(920, 70)">
+      <circle r="8" fill="#3b82f6" stroke="#fff" stroke-width="2"/>
+      <text x="0" y="-20" text-anchor="middle" font-size="12" font-weight="700" fill="#334155">2021</text>
+      <text x="0" y="-36" text-anchor="middle" font-size="11" fill="#64748b">DreamerV2 · 离散表征</text>
+    </g>
+
+    <!-- 2022 LeCun JEPA + MILE -->
+    <g transform="translate(1200, 70)">
+      <rect x="-100" y="-65" width="200" height="42" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="0" y="-48" text-anchor="middle" font-size="11" font-weight="700" fill="#92400e">⭐ LeCun JEPA 立场论文</text>
+      <text x="0" y="-34" text-anchor="middle" font-size="10" fill="#92400e">抽象空间预测 vs 像素生成</text>
+      <circle r="12" fill="#06b6d4" stroke="#fff" stroke-width="3" filter="url(#glow)"/>
+      <text x="0" y="30" text-anchor="middle" font-size="12" font-weight="700" fill="#334155">2022</text>
+      <text x="0" y="46" text-anchor="middle" font-size="10" fill="#64748b">+ MILE (NeurIPS 驾驶)</text>
+    </g>
+  </g>
+
+  <!-- ================================ -->
+  <!-- 第三纪元：基础世界模型 2023–2026 -->
+  <!-- ================================ -->
+  <g transform="translate(0, 490)">
+    <rect x="60" y="0" width="1680" height="44" rx="8" fill="url(#era3Grad)"/>
+    <text x="900" y="28" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">第三纪元：基础世界模型时代（2023 – 2026）</text>
+    <text x="1680" y="28" text-anchor="end" font-size="12" fill="#fce7f3">Sora · Genie · Cosmos · VideoWorld · 研究爆发</text>
+  </g>
+
+  <!-- 2023 年 -->
+  <g transform="translate(0, 560)">
+    <rect x="60" y="0" width="50" height="330" rx="6" fill="#fce7f3"/>
+    <text x="85" y="170" text-anchor="middle" font-size="16" font-weight="700" fill="#db2777" transform="rotate(-90, 85, 170)">2023</text>
+
+    <!-- 时间轴 -->
+    <line x1="130" y1="30" x2="130" y2="310" stroke="#ec4899" stroke-width="2" stroke-dasharray="4,4"/>
+
+    <!-- I-JEPA 2023.01 -->
+    <g transform="translate(160, 30)">
+      <circle cx="0" cy="0" r="8" fill="#06b6d4" stroke="#fff" stroke-width="2"/>
+      <rect x="15" y="-14" width="280" height="28" rx="5" fill="#fff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#334155"><tspan font-weight="700">I-JEPA</tspan> (Meta) — 图像 JEPA 自监督 · ICCV 2023</text>
+    </g>
+
+    <!-- DreamerV3 + Othello-GPT + IRIS 2023.01 ⭐ -->
+    <g transform="translate(160, 70)">
+      <circle cx="0" cy="0" r="10" fill="#3b82f6" stroke="#f59e0b" stroke-width="2.5"/>
+      <rect x="15" y="-14" width="380" height="28" rx="5" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#92400e"><tspan font-weight="700">⭐ DreamerV3</tspan> 跨150+任务 · <tspan font-weight="700">Othello-GPT</tspan> 涌现表征 · <tspan font-weight="700">IRIS</tspan></text>
+    </g>
+
+    <!-- RAP 2023.05 -->
+    <g transform="translate(160, 110)">
+      <circle cx="0" cy="0" r="8" fill="#ef4444" stroke="#fff" stroke-width="2"/>
+      <rect x="15" y="-14" width="340" height="28" rx="5" fill="#fff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#334155"><tspan font-weight="700">RAP</tspan> (EMNLP) — LLM 同时作世界模型 + 智能体 + MCTS</text>
+    </g>
+
+    <!-- GAIA-1 2023.09 ⭐ -->
+    <g transform="translate(160, 150)">
+      <circle cx="0" cy="0" r="10" fill="#10b981" stroke="#f59e0b" stroke-width="2.5"/>
+      <rect x="15" y="-14" width="380" height="28" rx="5" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#92400e"><tspan font-weight="700">⭐ GAIA-1</tspan> (Wayve) 9B 参数驾驶 WM · 证明缩放定律</text>
+    </g>
+
+    <!-- UniSim 2023.10 ⭐ -->
+    <g transform="translate(160, 190)">
+      <circle cx="0" cy="0" r="10" fill="#ec4899" stroke="#f59e0b" stroke-width="2.5"/>
+      <rect x="15" y="-14" width="360" height="28" rx="5" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#92400e"><tspan font-weight="700">⭐ UniSim</tspan> 通用交互仿真器 · 零样本迁移真实世界</text>
+    </g>
+
+    <!-- TD-MPC2 + Copilot4D 2023.10-11 -->
+    <g transform="translate(160, 230)">
+      <circle cx="0" cy="0" r="7" fill="#3b82f6" stroke="#fff" stroke-width="2"/>
+      <rect x="15" y="-14" width="350" height="28" rx="5" fill="#fff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#334155"><tspan font-weight="700">TD-MPC2</tspan> 3.17 亿跨 80 任务 · <tspan font-weight="700">Copilot4D</tspan> LiDAR WM</text>
+    </g>
+
+    <!-- LAW Framework 2023.12 -->
+    <g transform="translate(160, 270)">
+      <circle cx="0" cy="0" r="7" fill="#ef4444" stroke="#fff" stroke-width="2"/>
+      <rect x="15" y="-14" width="340" height="28" rx="5" fill="#fff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#334155"><tspan font-weight="700">LAW 框架</tspan> (NeurIPS Tutorial) L-语言 A-智能体 W-世界</text>
+    </g>
+
+    <!-- 右侧同期作品 -->
+    <g transform="translate(900, 30)">
+      <circle cx="0" cy="0" r="7" fill="#ef4444" stroke="#fff" stroke-width="2"/>
+      <rect x="15" y="-14" width="310" height="28" rx="5" fill="#fff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#334155">MIT: Llama-2 内部学习空间与时间表征</text>
+    </g>
+
+    <g transform="translate(900, 70)">
+      <circle cx="0" cy="0" r="7" fill="#10b981" stroke="#fff" stroke-width="2"/>
+      <rect x="15" y="-14" width="310" height="28" rx="5" fill="#fff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#334155">DriveDreamer / ADriver-I (上海 AI Lab)</text>
+    </g>
+
+    <g transform="translate(900, 110)">
+      <circle cx="0" cy="0" r="7" fill="#ec4899" stroke="#fff" stroke-width="2"/>
+      <rect x="15" y="-14" width="260" height="28" rx="5" fill="#fff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#334155">GameNGen (Google) DOOM 实时</text>
+    </g>
+  </g>
+
+  <!-- 2024 年 -->
+  <g transform="translate(0, 920)">
+    <rect x="60" y="0" width="50" height="420" rx="6" fill="#fce7f3"/>
+    <text x="85" y="210" text-anchor="middle" font-size="16" font-weight="700" fill="#db2777" transform="rotate(-90, 85, 210)">2024</text>
+
+    <line x1="130" y1="30" x2="130" y2="400" stroke="#ec4899" stroke-width="2" stroke-dasharray="4,4"/>
+
+    <!-- Sora 2024.02 ⭐ -->
+    <g transform="translate(160, 30)">
+      <circle cx="0" cy="0" r="12" fill="#8b5cf6" stroke="#f59e0b" stroke-width="3"/>
+      <rect x="18" y="-18" width="420" height="36" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="2" filter="url(#shadow)"/>
+      <text x="28" y="-1" font-size="13" fill="#92400e"><tspan font-weight="800">⭐ Sora</tspan> (OpenAI) — "视频生成模型即世界模拟器"</text>
+      <text x="28" y="14" font-size="10" fill="#a16207">DiT + 时空 Patch · 涌现 3D 一致性、物体持久性、物理交互</text>
+    </g>
+
+    <!-- Genie 2024.02 ⭐ -->
+    <g transform="translate(160, 80)">
+      <circle cx="0" cy="0" r="10" fill="#ec4899" stroke="#f59e0b" stroke-width="2.5"/>
+      <rect x="15" y="-14" width="380" height="28" rx="5" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#92400e"><tspan font-weight="700">⭐ Genie 1</tspan> (DeepMind) 11B 交互环境生成 · 无监督学习动作</text>
+    </g>
+
+    <!-- V-JEPA 2024.02 -->
+    <g transform="translate(160, 120)">
+      <circle cx="0" cy="0" r="8" fill="#06b6d4" stroke="#fff" stroke-width="2"/>
+      <rect x="15" y="-14" width="330" height="28" rx="5" fill="#fff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#334155"><tspan font-weight="700">V-JEPA</tspan> (Meta) 视频 JEPA · 训练效率提升 1.5-6×</text>
+    </g>
+
+    <!-- DIAMOND 2024.05 ⭐ -->
+    <g transform="translate(160, 160)">
+      <circle cx="0" cy="0" r="10" fill="#3b82f6" stroke="#f59e0b" stroke-width="2.5"/>
+      <rect x="15" y="-14" width="380" height="28" rx="5" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#92400e"><tspan font-weight="700">⭐ DIAMOND</tspan> (NeurIPS Spotlight) 首个扩散 WM for RL</text>
+    </g>
+
+    <!-- CogVideoX 2024.08 -->
+    <g transform="translate(160, 200)">
+      <circle cx="0" cy="0" r="8" fill="#8b5cf6" stroke="#fff" stroke-width="2"/>
+      <rect x="15" y="-14" width="330" height="28" rx="5" fill="#fff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#334155"><tspan font-weight="700">CogVideoX</tspan> (智谱/清华 ICLR) 3D VAE + Expert DiT</text>
+    </g>
+
+    <!-- Oasis 2024.10 ⭐ -->
+    <g transform="translate(160, 240)">
+      <circle cx="0" cy="0" r="10" fill="#ec4899" stroke="#f59e0b" stroke-width="2.5"/>
+      <rect x="15" y="-14" width="380" height="28" rx="5" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#92400e"><tspan font-weight="700">⭐ Oasis</tspan> (Decart) 纯 Transformer 实时 Minecraft 20fps</text>
+    </g>
+
+    <!-- Genie 2 2024.12 ⭐ -->
+    <g transform="translate(160, 280)">
+      <circle cx="0" cy="0" r="10" fill="#ec4899" stroke="#f59e0b" stroke-width="2.5"/>
+      <rect x="15" y="-14" width="380" height="28" rx="5" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#92400e"><tspan font-weight="700">⭐ Genie 2</tspan> 基础 WM · 单图生成丰富 3D 世界 + NPC + 物理</text>
+    </g>
+
+    <!-- HunyuanVideo 2024.12 -->
+    <g transform="translate(160, 320)">
+      <circle cx="0" cy="0" r="8" fill="#8b5cf6" stroke="#fff" stroke-width="2"/>
+      <rect x="15" y="-14" width="340" height="28" rx="5" fill="#fff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#334155"><tspan font-weight="700">HunyuanVideo</tspan> (腾讯) 13B+ 最大开源视频模型</text>
+    </g>
+
+    <!-- 右侧同期 -->
+    <g transform="translate(900, 30)">
+      <circle cx="0" cy="0" r="7" fill="#ec4899" stroke="#fff" stroke-width="2"/>
+      <rect x="15" y="-14" width="280" height="28" rx="5" fill="#fff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#334155">WorldDreamer (清华) 首个通用 WM</text>
+    </g>
+    <g transform="translate(900, 70)">
+      <circle cx="0" cy="0" r="7" fill="#10b981" stroke="#fff" stroke-width="2"/>
+      <rect x="15" y="-14" width="310" height="28" rx="5" fill="#fff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#334155">Vista (NeurIPS) 驾驶 WM SOTA · FID -55%</text>
+    </g>
+    <g transform="translate(900, 110)">
+      <circle cx="0" cy="0" r="7" fill="#6366f1" stroke="#fff" stroke-width="2"/>
+      <rect x="15" y="-14" width="280" height="28" rx="5" fill="#fff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#334155">GenEx / Pandora / IWM 3D/4D 探索</text>
+    </g>
+    <g transform="translate(900, 150)">
+      <circle cx="0" cy="0" r="7" fill="#10b981" stroke="#fff" stroke-width="2"/>
+      <rect x="15" y="-14" width="360" height="28" rx="5" fill="#fff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#334155">OccWorld / DriveWorld / DriveDreamer-2 驾驶 WM 集群</text>
+    </g>
+    <g transform="translate(900, 190)">
+      <circle cx="0" cy="0" r="7" fill="#ef4444" stroke="#fff" stroke-width="2"/>
+      <rect x="15" y="-14" width="310" height="28" rx="5" fill="#fff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#334155">LWM / WorldCoder / WorldGPT LLM世界模型</text>
+    </g>
+    <g transform="translate(900, 230)">
+      <circle cx="0" cy="0" r="7" fill="#8b5cf6" stroke="#fff" stroke-width="2"/>
+      <rect x="15" y="-14" width="300" height="28" rx="5" fill="#fff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#334155">Diffusion Forcing (MIT) 新范式探索</text>
+    </g>
+    <g transform="translate(900, 270)">
+      <circle cx="0" cy="0" r="7" fill="#06b6d4" stroke="#fff" stroke-width="2"/>
+      <rect x="15" y="-14" width="280" height="28" rx="5" fill="#fff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#334155">V-JEPA 2 / AniSora (Bilibili)</text>
+    </g>
+    <g transform="translate(900, 310)">
+      <circle cx="0" cy="0" r="7" fill="#6366f1" stroke="#fff" stroke-width="2"/>
+      <rect x="15" y="-14" width="260" height="28" rx="5" fill="#fff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#334155">TRELLIS 3D 资产生成</text>
+    </g>
+  </g>
+
+  <!-- 2025 年 -->
+  <g transform="translate(0, 1370)">
+    <rect x="60" y="0" width="50" height="460" rx="6" fill="#fce7f3"/>
+    <text x="85" y="230" text-anchor="middle" font-size="16" font-weight="700" fill="#db2777" transform="rotate(-90, 85, 230)">2025</text>
+
+    <line x1="130" y1="30" x2="130" y2="440" stroke="#ec4899" stroke-width="2" stroke-dasharray="4,4"/>
+
+    <!-- Cosmos 2025.01 ⭐ -->
+    <g transform="translate(160, 30)">
+      <circle cx="0" cy="0" r="12" fill="#6366f1" stroke="#f59e0b" stroke-width="3"/>
+      <rect x="18" y="-18" width="420" height="36" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="2" filter="url(#shadow)"/>
+      <text x="28" y="-1" font-size="13" fill="#92400e"><tspan font-weight="800">⭐ NVIDIA Cosmos</tspan> — 首个开源世界基础模型平台</text>
+      <text x="28" y="14" font-size="10" fill="#a16207">13 个仓库 · 完整物理 AI 管线 · Apache-2.0</text>
+    </g>
+
+    <!-- VideoWorld 2025.01 ⭐ -->
+    <g transform="translate(160, 80)">
+      <circle cx="0" cy="0" r="10" fill="#8b5cf6" stroke="#f59e0b" stroke-width="2.5"/>
+      <rect x="15" y="-14" width="400" height="28" rx="5" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#92400e"><tspan font-weight="700">⭐ VideoWorld</tspan> (北大) 纯视频学围棋五段 · 无搜索无奖励</text>
+    </g>
+
+    <!-- DreamerV4 2025.01 -->
+    <g transform="translate(160, 120)">
+      <circle cx="0" cy="0" r="8" fill="#3b82f6" stroke="#fff" stroke-width="2"/>
+      <rect x="15" y="-14" width="310" height="28" rx="5" fill="#fff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#334155"><tspan font-weight="700">DreamerV4</tspan> · <tspan font-weight="700">1X WM</tspan> · <tspan font-weight="700">Genie 2</tspan> 延续</text>
+    </g>
+
+    <!-- Step-Video + Wan2.1 2025.02-03 -->
+    <g transform="translate(160, 160)">
+      <circle cx="0" cy="0" r="8" fill="#8b5cf6" stroke="#fff" stroke-width="2"/>
+      <rect x="15" y="-14" width="400" height="28" rx="5" fill="#fff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#334155"><tspan font-weight="700">Step-Video</tspan> 30B · <tspan font-weight="700">Wan2.1</tspan> 14B VBench 83.7% · <tspan font-weight="700">Seedance</tspan></text>
+    </g>
+
+    <!-- SkyReels-V2 + GAIA-2 2025.04 -->
+    <g transform="translate(160, 200)">
+      <circle cx="0" cy="0" r="8" fill="#8b5cf6" stroke="#fff" stroke-width="2"/>
+      <rect x="15" y="-14" width="410" height="28" rx="5" fill="#fff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#334155"><tspan font-weight="700">SkyReels-V2</tspan> 首个开源 Diffusion Forcing · <tspan font-weight="700">GAIA-2</tspan> 多视角</text>
+    </g>
+
+    <!-- FLARE 2025.05 -->
+    <g transform="translate(160, 240)">
+      <circle cx="0" cy="0" r="8" fill="#f59e0b" stroke="#fff" stroke-width="2"/>
+      <rect x="15" y="-14" width="380" height="28" rx="5" fill="#fff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#334155"><tspan font-weight="700">FLARE</tspan> (NVIDIA) 隐式 WM 机器人 · <tspan font-weight="700">V-JEPA 2</tspan> 理解+规划</text>
+    </g>
+
+    <!-- Genie 3 2025.08 ⭐ -->
+    <g transform="translate(160, 290)">
+      <circle cx="0" cy="0" r="12" fill="#ec4899" stroke="#f59e0b" stroke-width="3"/>
+      <rect x="18" y="-18" width="420" height="36" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="2" filter="url(#shadow)"/>
+      <text x="28" y="-1" font-size="13" fill="#92400e"><tspan font-weight="800">⭐ Genie 3</tspan> — 首个实时交互世界模型</text>
+      <text x="28" y="14" font-size="10" fill="#a16207">24fps / 720p 生成逼真可交互 3D 世界</text>
+    </g>
+
+    <!-- Sora 2 2025.09 ⭐ -->
+    <g transform="translate(160, 340)">
+      <circle cx="0" cy="0" r="10" fill="#8b5cf6" stroke="#f59e0b" stroke-width="2.5"/>
+      <rect x="15" y="-14" width="380" height="28" rx="5" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#92400e"><tspan font-weight="700">⭐ Sora 2</tspan> 物理精度大幅↑ · 多镜头 · 音频 · iOS 应用</text>
+    </g>
+
+    <!-- GAIA-3 + Aether 2025.10 -->
+    <g transform="translate(160, 380)">
+      <circle cx="0" cy="0" r="8" fill="#10b981" stroke="#fff" stroke-width="2"/>
+      <rect x="15" y="-14" width="410" height="28" rx="5" fill="#fff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#334155"><tspan font-weight="700">GAIA-3</tspan> 15B 9 国 · <tspan font-weight="700">Aether</tspan> ICCV 杰出论文 · <tspan font-weight="700">SIMA 2</tspan></text>
+    </g>
+
+    <!-- 右侧 -->
+    <g transform="translate(900, 30)">
+      <circle cx="0" cy="0" r="7" fill="#6366f1" stroke="#fff" stroke-width="2"/>
+      <rect x="15" y="-14" width="340" height="28" rx="5" fill="#fff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#334155">HunyuanWorld / World3D / Cosmos-Transfer1</text>
+    </g>
+    <g transform="translate(900, 70)">
+      <circle cx="0" cy="0" r="7" fill="#f59e0b" stroke="#fff" stroke-width="2"/>
+      <rect x="15" y="-14" width="310" height="28" rx="5" fill="#fff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#334155">V-JEPA 2-AC 具身控制 / DreamZero 预览</text>
+    </g>
+    <g transform="translate(900, 110)">
+      <circle cx="0" cy="0" r="7" fill="#6b7280" stroke="#fff" stroke-width="2"/>
+      <rect x="15" y="-14" width="320" height="28" rx="5" fill="#fff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#334155">CheXWorld / EchoWorld (CVPR) 医疗 WM</text>
+    </g>
+    <g transform="translate(900, 150)">
+      <circle cx="0" cy="0" r="7" fill="#10b981" stroke="#fff" stroke-width="2"/>
+      <rect x="15" y="-14" width="310" height="28" rx="5" fill="#fff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#334155">Cosmos-Drive-Dreams / InfinityDrive</text>
+    </g>
+    <g transform="translate(900, 200)">
+      <rect x="15" y="-18" width="300" height="36" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="28" y="-2" font-size="11" font-weight="700" fill="#92400e">📊 2025：arXiv 世界模型论文</text>
+      <text x="28" y="14" font-size="10" fill="#a16207">月均 30+ 篇，增速加快中</text>
+    </g>
+  </g>
+
+  <!-- 2026 年 -->
+  <g transform="translate(0, 1860)">
+    <rect x="60" y="0" width="50" height="220" rx="6" fill="#fce7f3"/>
+    <text x="85" y="110" text-anchor="middle" font-size="16" font-weight="700" fill="#db2777" transform="rotate(-90, 85, 110)">2026</text>
+
+    <line x1="130" y1="30" x2="130" y2="200" stroke="#ec4899" stroke-width="2" stroke-dasharray="4,4"/>
+
+    <!-- DreamZero 2026.02 ⭐ -->
+    <g transform="translate(160, 40)">
+      <circle cx="0" cy="0" r="12" fill="#f59e0b" stroke="#f59e0b" stroke-width="3"/>
+      <rect x="18" y="-18" width="420" height="36" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="2" filter="url(#shadow)"/>
+      <text x="28" y="-1" font-size="13" fill="#92400e"><tspan font-weight="800">⭐ DreamZero</tspan> (DeepMind) 14B 视频扩散 WAM</text>
+      <text x="28" y="14" font-size="10" fill="#a16207">7Hz 实时闭环控制 · 泛化比 SOTA VLA 提升 2×+</text>
+    </g>
+
+    <!-- World-Gymnast 2026.02 -->
+    <g transform="translate(160, 90)">
+      <circle cx="0" cy="0" r="8" fill="#f59e0b" stroke="#fff" stroke-width="2"/>
+      <rect x="15" y="-14" width="380" height="28" rx="5" fill="#fff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#334155"><tspan font-weight="700">World-Gymnast</tspan> (Stanford) 视频 WM 内 RL 微调 VLA · 18× ↑</text>
+    </g>
+
+    <!-- 爆发期 -->
+    <g transform="translate(160, 140)">
+      <rect x="0" y="-18" width="500" height="36" rx="8" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="15" y="-1" font-size="12" font-weight="700" fill="#dc2626">🔥 研究爆发：2026 年前两月 arXiv World Model 论文已超百篇</text>
+      <text x="15" y="14" font-size="10" fill="#b91c1c">覆盖 RL、视频、驾驶、具身、3D、医疗、气象、通信等方向</text>
+    </g>
+
+    <!-- 右侧 -->
+    <g transform="translate(900, 40)">
+      <circle cx="0" cy="0" r="7" fill="#6b7280" stroke="#fff" stroke-width="2"/>
+      <rect x="15" y="-14" width="360" height="28" rx="5" fill="#fff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#334155">EHRWorld / NetWorld / MRI WM / 行业应用持续拓展</text>
+    </g>
+    <g transform="translate(900, 80)">
+      <circle cx="0" cy="0" r="7" fill="#6366f1" stroke="#fff" stroke-width="2"/>
+      <rect x="15" y="-14" width="300" height="28" rx="5" fill="#fff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+      <text x="25" y="4" font-size="11" fill="#334155">4DWorldBench 基准 / 评估体系成熟</text>
+    </g>
+  </g>
+
+  <!-- 底部统计 -->
+  <g transform="translate(0, 2110)">
+    <rect x="90" y="0" width="1620" height="70" rx="10" fill="#fff" stroke="#e2e8f0" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="900" y="25" text-anchor="middle" font-size="14" font-weight="700" fill="#334155">📈 关键数字</text>
+    <text x="250" y="50" text-anchor="middle" font-size="13" fill="#6366f1" font-weight="600">210+ 篇论文</text>
+    <text x="520" y="50" text-anchor="middle" font-size="13" fill="#8b5cf6" font-weight="600">9 大方向</text>
+    <text x="760" y="50" text-anchor="middle" font-size="13" fill="#10b981" font-weight="600">3 个时代</text>
+    <text x="1000" y="50" text-anchor="middle" font-size="13" fill="#ec4899" font-weight="600">26 篇综述</text>
+    <text x="1260" y="50" text-anchor="middle" font-size="13" fill="#f59e0b" font-weight="600">83 年历程</text>
+    <text x="1500" y="50" text-anchor="middle" font-size="13" fill="#ef4444" font-weight="600">2026 研究爆发期</text>
+  </g>
+
+  <!-- 版权 -->
+  <text x="900" y="2195" text-anchor="middle" font-size="10" fill="#94a3b8">世界模型发展历程 · JoenHune/world-model-survey · 数据截至 2026.02</text>
+</svg>

@@ -1,0 +1,113 @@
+/* ===== 字体栈：CJK + 英文混排 ===== */
+:root {
+  --vp-font-family-base: "Inter", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --vp-font-family-mono: "JetBrains Mono", "Fira Code", "Menlo", monospace;
+
+  /* 品牌色 */
+  --vp-c-brand-1: #6366f1;
+  --vp-c-brand-2: #818cf8;
+  --vp-c-brand-3: #4f46e5;
+}
+
+.dark {
+  --vp-c-brand-1: #818cf8;
+  --vp-c-brand-2: #a5b4fc;
+  --vp-c-brand-3: #6366f1;
+}
+
+/* ===== 宽表格水平滚动 ===== */
+.vp-doc table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* ===== 可排序表格样式 ===== */
+.vp-doc table.sortable-init th {
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s;
+}
+.vp-doc table.sortable-init th:hover {
+  background-color: var(--vp-c-bg-mute);
+}
+.vp-doc table.sortable-init th .sort-indicator {
+  transition: opacity 0.2s;
+}
+
+/* 表格在宽屏下恢复正常 */
+@media (min-width: 960px) {
+  .vp-doc table {
+    white-space: normal;
+  }
+}
+
+/* 表格样式增强 */
+.vp-doc th {
+  background-color: var(--vp-c-bg-soft);
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+}
+
+.vp-doc tr:hover td {
+  background-color: var(--vp-c-bg-soft);
+}
+
+/* ===== Emoji 在表格中对齐 ===== */
+.vp-doc td {
+  vertical-align: middle;
+}
+
+/* ===== 版本 Banner ===== */
+.vp-doc blockquote:first-child {
+  border-left: 4px solid var(--vp-c-brand-1);
+  background-color: var(--vp-c-bg-soft);
+  padding: 12px 16px;
+  border-radius: 4px;
+}
+
+/* ===== 代码块（架构演进图等 ASCII art） ===== */
+.vp-doc div[class*="language-"] pre {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* ===== 首页 Features 卡片样式 ===== */
+.VPFeatures .VPFeature {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.VPFeatures .VPFeature:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== 论文链接样式 ===== */
+.vp-doc a[href*="arxiv.org"],
+.vp-doc a[href*="github.com"] {
+  text-decoration: none;
+  border-bottom: 1px dashed var(--vp-c-brand-1);
+}
+
+.vp-doc a[href*="arxiv.org"]:hover,
+.vp-doc a[href*="github.com"]:hover {
+  border-bottom-style: solid;
+}
+
+/* ===== 加粗论文名突出 ===== */
+.vp-doc table strong {
+  color: var(--vp-c-brand-1);
+}
+
+/* ===== KaTeX 公式微调 ===== */
+.katex {
+  font-size: 1.05em;
+}
+
+.katex-display {
+  margin: 1.5em 0;
+  overflow-x: auto;
+}
