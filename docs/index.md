@@ -1,12 +1,12 @@
 ---
 layout: home
 title: 人形机器人运动控制研究报告
-titleTemplate: 深度调研 · 2016–2026
+titleTemplate: 深度调研 · 2000–2026
 
 hero:
   name: 人形机器人
   text: 运动控制研究报告
-  tagline: 覆盖 2016–2026 · ~150 篇论文 · 5 大研究方向 · 20+ 家全球机构
+  tagline: 覆盖 2000–2026 · ~150 篇论文 · 5 大研究方向 · 20+ 家全球机构
   actions:
     - theme: brand
       text: 开始阅读 →

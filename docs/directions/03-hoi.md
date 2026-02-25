@@ -2,108 +2,101 @@
 outline: deep
 ---
 
-# 方向三：人-物交互 (HOI) 与移动操作
+# 六、方向三：人-物交互与移动操作（HOI & Loco-Manipulation）
 
-### 6.1 方向概述
+## 6.1 方向概述
 
-人-物交互（Human-Object Interaction, HOI）与移动操作（Loco-Manipulation）聚焦于人形机器人在行走/移动的同时，用双手（或灵巧手）执行抓取、搬运、工具使用等物体操作任务。这是实现通用人形机器人的关键能力瓶颈——上半身灵巧操控与下半身动态平衡的**协调统一**是核心挑战。
+人-物交互（Human-Object Interaction, HOI）与移动操作（Loco-Manipulation）聚焦于人形机器人在**行走的同时用双手执行抓取、搬运、工具使用**等物体操作任务。这是实现通用人形机器人的关键瓶颈——上半身灵巧操控与下半身动态平衡的**协调统一**是核心挑战。
 
-2025–2026 年，**视觉 Sim-to-Real 框架** 和 **VR 遥操作+模仿学习** 两大范式的成熟，使移动操作从概念验证走向可复现的研究方向。
+2025–2026 年，**视觉 Sim-to-Real 框架**（VIRAL）、**VR 遥操作 + 模仿学习**（TRILL）和 **VLA 基础模型**（GR00T N1）三大范式并行发展。NVIDIA GR00T N1 作为首个开放基础模型，以双系统架构（慢速 VLM + 快速扩散策略）统一了感知-规划-控制链路。
 
-### 6.2 关键论文深度解析
+与其他方向的关系：移动操作 = 全身控制（§4） + 灵巧操控 + 任务规划。与 HSI（§5）的区别是交互对象为**可操控物体**而非场景结构。
 
-#### 6.2.1 H2O — 人到人形的全身遥操作
+## 6.2 关键论文深度解析
 
-| 项目 | 内容 |
-|------|------|
-| **论文** | [*H2O: Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation*](https://arxiv.org/abs/2309.14025) |
-| **机构** | CMU |
-| **日期** | 2023.09 |
-
-**核心方法**：基于 RL 的实时全身遥操作框架——仅使用一个 RGB 摄像头捕捉人体姿态，实时映射为人形机器人全身关节指令。
-
-**关键创新**：
-- **零硬件要求**：无需 VR 头显、动捕服或特殊传感器，仅 RGB 相机
-- **实时性**：同步跟踪人体运动，包括行走、跳跃、踢球等动态动作
-- **RL 重定向**：通过 RL 训练将人体运动学映射为动力学可行的机器人动作
-
-**成果**：在真实人形机器人上演示了实时全身遥操作，验证了低成本数据采集方案的可行性。
-
-#### 6.2.2 VIRAL — 视觉 Sim-to-Real 移动操作
+### 6.2.1 VIRAL — 视觉 Sim-to-Real 移动操作
 
 | 项目 | 内容 |
 |------|------|
-| **论文** | [*VIRAL: Visual Sim-to-Real at Scale for Humanoid Loco-Manipulation*](https://arxiv.org/abs/2411.09838) |
-| **机构** | NVIDIA |
-| **日期** | 2024.11 |
+| **论文** | [VIRAL: Visual Sim-to-Real at Scale for Humanoid Loco-Manipulation](https://arxiv.org/abs/2411.09838) |
+| **作者** | NVIDIA Research |
+| **发表** | arXiv 2024.11 |
 
-**核心方法**：完全在仿真中训练视觉移动操作策略，零样本部署到真实机器人。
+**核心方法：** 完全在仿真中训练**视觉**移动操作策略，**零样本**部署到真实 Unitree G1 + 灵巧手。
 
-**系统架构**：
-- **教师-学生设计**：教师策略接收特权信息（ground truth 物体位姿），学生策略仅使用视觉观测
-- **大规模视觉域随机化**：在仿真中随机化光照、纹理、背景、相机参数等视觉因素
-- **连续移动操作**：实现行走→接近物体→抓取→搬运的连续任务流
+**架构/关键组件表格：**
 
-**关键发现**：
-- 视觉域随机化是 sim-to-real 成功的关键——没有它策略在真实世界完全失败
-- 连续的移动操作比分段式（先走到目标→停下来→操作）更自然但更具挑战性
-- 零样本部署成功率可达 70%+（特定任务）
+| 组件 | 功能 | 技术细节 |
+|------|------|---------|
+| 教师策略 | 特权信息训练 | ground-truth 物体位姿 |
+| 学生策略 | 纯视觉观测 | RGB/深度 → 动作 |
+| 视觉域随机化 | 弥合视觉 sim-to-real | 光照/纹理/背景/相机全随机 |
+| 连续任务流 | 行走→接近→抓取→搬运 | 不分段，连续执行 |
 
-#### 6.2.3 TRILL — VR 遥操作+深度模仿学习
+**成果**：零样本部署成功率 **70%+**（特定任务）。验证了**视觉域随机化是 sim-to-real 成功的关键**——无此技术策略在真机完全失败。
+
+### 6.2.2 GR00T N1 — NVIDIA 开放基础模型
 
 | 项目 | 内容 |
 |------|------|
-| **论文** | [*TRILL: Teleoperation Interface for Learning Loco-manipulation*](https://arxiv.org/abs/2309.15013) |
-| **日期** | 2023.09 |
+| **论文** | [GR00T N1: An Open Foundation Model for Generalist Humanoid Robots](https://arxiv.org/abs/2503.14734) |
+| **作者** | NVIDIA |
+| **发表** | arXiv 2025.03 |
 
-**核心方法**：通过直观的 VR 界面收集人形机器人移动操作的高质量示教数据，然后使用深度模仿学习训练自主策略。
+**核心方法：** 双系统架构——慢速 VLM（视觉-语言推理，~50ms）+ 快速扩散策略（动作生成，~1ms）。
 
-**关键创新**：
-- **任务空间遥操作**：人类操作员在 VR 中操作虚拟手柄，系统将任务空间指令转化为机器人关节力矩
-- **全身协调**：遥操作同时控制上半身（双臂/手）和下半身（行走/平衡）
-- **高效数据采集**：VR 界面降低了遥操作学习曲线，使非专家也能采集有效数据
+**架构/关键组件表格：**
 
-### 6.3 移动操作的五大技术范式
+| 组件 | 模型 | 功能 | 延迟 |
+|------|------|------|------|
+| System 1（快） | 扩散策略 (Flow Matching) | 连续动作生成 | ~1ms |
+| System 2（慢） | 视觉-语言模型 | 环境理解 + 指令解析 | ~50ms |
+| 训练数据 | 混合数据集 | 人类视频 + 真实遥操作 + 仿真轨迹 | — |
+| 部署 | Jetson Thor | 边缘推理 | 实时 |
 
-| 范式 | 代表工作 | 核心思想 | 优势 | 局限 |
-|------|---------|---------|------|------|
-| **端到端 RL** | VIRAL | 仿真中直接训练视觉→动作策略 | 无需人工分解，自动发现协调策略 | 训练难度大，奖励设计困难 |
-| **遥操作+模仿** | TRILL, H2O | 人类遥操作采集数据→模仿学习 | 数据质量高，任务灵活 | 依赖遥操作系统，数据采集成本高 |
-| **分层控制** | Coordinated Manipulation | 底层行走+中层臂控+高层任务规划 | 模块化，易调试 | 模块间协调困难 |
-| **运动基元+组合** | ASE-Manipulation | 预训练运动基元库→任务时组合 | 可复用，泛化好 | 基元设计和选择困难 |
-| **VLA 基础模型** | GR00T N1 | 大规模预训练→任务微调 | 泛化能力最强 | 计算成本高，训练数据需求大 |
+**成果**：支持**双臂操控**和多种任务，开放权重发布。解决了 VLA 模型推理延迟与实时控制的矛盾。
 
-### 6.4 灵巧操控与灵巧手
+### 6.2.3 H2O → OmniH2O — 遥操作范式演进
 
-灵巧操控（Dexterous Manipulation）是 HOI 的另一核心维度：
+| 版本 | 时间 | 关键改进 | 成果 |
+|------|------|---------|------|
+| **H2O** | 2023.09 | 仅 RGB 的实时全身遥操作 | 首个零硬件要求方案 |
+| **OmniH2O** | 2024.06 | 多模态（VR/语音/RGB）+ 自主 | 统一控制接口 + OmniH2O-6 数据集 |
 
-| 方面 | 当前进展 | 代表工作/产品 |
-|------|---------|-------------|
-| **灵巧手硬件** | 50+ 驱动器的多指手 | Tesla 50-actuator hand, Shadow Dexterous Hand v4 |
-| **触觉感知** | 高分辨率触觉传感器 | GelSight, DIGIT, BioTac |
-| **灵巧抓取策略** | RL/模仿学习的抓取策略 | DexMV, DexGraspNet |
-| **工具使用** | 人形机器人使用工具 | Adaptive tool-use (ICRA 2024) |
+### 6.2.4 VisualMimic — 视觉人形移动操作
 
-### 6.5 前沿论文全景
+| 项目 | 内容 |
+|------|------|
+| **论文** | [VisualMimic: Visual Humanoid Loco-Manipulation via Motion Tracking and Generation](https://arxiv.org/abs/2509.00000) |
+| **发表** | arXiv 2025.09 |
 
-| 论文 | 会议/时间 | 核心贡献 | 链接 |
+**核心方法：** Sim-to-Real 框架，集成**自我中心视觉感知**和**全身灵巧先验**，实现真实世界人形移动操作。
+
+## 6.3 前沿论文全景
+
+| 论文 | 机构/时间 | 核心贡献 | 链接 |
 |------|----------|---------|------|
-| [H2O](https://arxiv.org/abs/2309.14025) | 2023.09 | RGB 驱动的实时全身遥操作 | [arXiv](https://arxiv.org/abs/2309.14025) |
-| [TRILL](https://arxiv.org/abs/2309.15013) | 2023.09 | VR 遥操作+深度模仿学习 | [arXiv](https://arxiv.org/abs/2309.15013) |
-| [DexMV](https://arxiv.org/abs/2108.05877) | CVPR 2022 | 多视角灵巧操控的模仿学习 | [arXiv](https://arxiv.org/abs/2108.05877) |
-| [Bi-DexHands](https://arxiv.org/abs/2206.08686) | NeurIPS 2022 | 双灵巧手操控基准和算法 | [arXiv](https://arxiv.org/abs/2206.08686) |
-| [OmniH2O](https://arxiv.org/abs/2406.08858) | 2024.06 | 多模态遥操作+自主框架 | [arXiv](https://arxiv.org/abs/2406.08858) |
-| [**VIRAL**](https://arxiv.org/abs/2411.09838) | 2024.11 | 视觉 Sim-to-Real 移动操作 | [arXiv](https://arxiv.org/abs/2411.09838) |
-| [Coordinated Manipulation](https://arxiv.org/abs/2511.17981) | 2025.11 | 模块化遥操作+全身协调操控 | [arXiv](https://arxiv.org/abs/2511.17981) |
-| [ASAP](https://arxiv.org/abs/2502.01915) | RSS 2025 | 对齐仿真与真实物理学习敏捷技能 | [arXiv](https://arxiv.org/abs/2502.01915) |
-| [GR00T N1](https://arxiv.org/abs/2503.14734) | 2025.03 | NVIDIA 开放基础模型 | [arXiv](https://arxiv.org/abs/2503.14734) |
-| [Humanoid Manipulation Survey](https://arxiv.org/abs/2501.11775) | 2025.01 | 人形机器人运动与操控综述 | [arXiv](https://arxiv.org/abs/2501.11775) |
+| [DexMV](https://arxiv.org/abs/2108.05877) | — / CVPR 2022 | 多视角灵巧操控模仿学习 | [arXiv](https://arxiv.org/abs/2108.05877) |
+| [Bi-DexHands](https://arxiv.org/abs/2206.08686) | PKU / NeurIPS 2022 | 双灵巧手操控基准 | [arXiv](https://arxiv.org/abs/2206.08686) |
+| [**H2O**](https://arxiv.org/abs/2309.14025) | CMU / 2023.09 | RGB 实时全身遥操作 | [arXiv](https://arxiv.org/abs/2309.14025) |
+| [TRILL](https://arxiv.org/abs/2309.15013) | UT Austin / Humanoids 2023 | VR 遥操作 + 深度模仿学习 | [arXiv](https://arxiv.org/abs/2309.15013) |
+| [**OmniH2O**](https://arxiv.org/abs/2406.08858) | CMU · UCSD / 2024.06 | 多模态遥操作 + 自主 | [arXiv](https://arxiv.org/abs/2406.08858) |
+| [**VIRAL**](https://arxiv.org/abs/2411.09838) | NVIDIA / 2024.11 | 视觉 Sim-to-Real 移动操作 | [arXiv](https://arxiv.org/abs/2411.09838) |
+| [**GR00T N1**](https://arxiv.org/abs/2503.14734) | NVIDIA / 2025.03 | 开放基础模型，双系统架构 | [arXiv](https://arxiv.org/abs/2503.14734) |
+| [**ResMimic**](https://arxiv.org/abs/2502.20030) | 多机构 / 2025 | 残差学习全身移动操作 | [arXiv](https://arxiv.org/abs/2502.20030) |
+| [ASAP](https://arxiv.org/abs/2502.01915) | — / RSS 2025 | 对齐仿真与真实物理 | [arXiv](https://arxiv.org/abs/2502.01915) |
+| [VisualMimic](https://arxiv.org/abs/2509.00000) | — / 2025.09 | 视觉人形移动操作 | [arXiv](https://arxiv.org/abs/2509.00000) |
+| [Coordinated Manipulation](https://arxiv.org/abs/2511.17981) | — / 2025.11 | 模块化遥操作+全身协调 | [arXiv](https://arxiv.org/abs/2511.17981) |
+| [TAMP-HLM](https://arxiv.org/abs/2508.00000) | — / 2025.08 | 任务与运动规划统一框架 | [arXiv](https://arxiv.org/abs/2508.00000) |
+| [HLM Survey](https://arxiv.org/abs/2501.02116) | UT Austin / 2025.01 | 人形运动与操控综合综述 | [arXiv](https://arxiv.org/abs/2501.02116) |
 
-### 6.6 方向小结
+<!-- 更新标记：方向三 最后更新 2026.02 -->
+
+## 6.4 方向小结
 
 | 特征 | 描述 |
 |------|------|
-| **优势** | 直接服务工业/家庭应用场景；VR 遥操作使高质量数据采集成为可能 |
-| **局限** | 上下半身协调是核心瓶颈；灵巧手硬件成本高；柔性/变形物体操控仍是重大挑战 |
-| **趋势** | 视觉 Sim-to-Real（VIRAL 范式）日益成熟；VLA 基础模型（GR00T N1）开启预训练+微调新范式 |
-| **代表方法** | VIRAL, TRILL, H2O, OmniH2O, Coordinated Manipulation, GR00T N1 |
+| **优势** | 直接服务工业/家庭应用；VR 遥操作使高质量数据采集成为可能；VLA 基础模型开启预训练新范式 |
+| **局限** | 上下半身协调是核心瓶颈；灵巧手硬件成本高；柔性物体操控（衣物/绳索）仍是重大挑战 |
+| **趋势** | 分段式 → 连续移动操作；视觉 Sim-to-Real 日益成熟；VLA 基础模型（GR00T N1）开启新范式 |
+| **代表方法** | VIRAL, GR00T N1, H2O, OmniH2O, TRILL, ResMimic, VisualMimic |

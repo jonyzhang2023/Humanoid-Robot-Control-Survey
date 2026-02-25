@@ -36,7 +36,7 @@ jobs:
         run: npm run merge
 
       - name: Copy full report to public
-        run: cp 世界模型完整研究报告.md docs/public/
+        run: cp 人形机器人运动控制完整研究报告.md docs/public/
 
       - name: Build VitePress
         run: npm run docs:build

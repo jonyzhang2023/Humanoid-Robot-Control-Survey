@@ -2,10 +2,10 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: '人形机器人运动控制研究报告',
-  description: '人形机器人运动控制完整研究报告 — 覆盖 2016–2026 年，~150 篇论文，5 大研究方向',
+  description: '人形机器人运动控制完整研究报告 — 覆盖 2000–2026 年，~150 篇论文，5 大研究方向',
   lang: 'zh-CN',
   base: '/Humanoid-Robot-Control-Survey/',
-  lastUpdated: true,
+  lastUpdated: false,
   cleanUrls: true,
 
   head: [
