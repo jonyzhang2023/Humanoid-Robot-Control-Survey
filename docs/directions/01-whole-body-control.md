@@ -40,7 +40,7 @@ outline: deep
 
 | 项目 | 内容 |
 |------|------|
-| **论文** | [SONIC: Supersizing Motion Tracking for Natural Humanoid Whole-Body Control](https://arxiv.org/abs/2502.00000) |
+| **论文** | [SONIC: Supersizing Motion Tracking for Natural Humanoid Whole-Body Control](https://arxiv.org/abs/2511.07820) |
 | **作者** | CMU 团队 |
 | **发表** | 2025.10 |
 | **代码** | [sonic-humanoid.github.io](https://sonic-humanoid.github.io/) |
@@ -151,7 +151,7 @@ outline: deep
 | [**FAST**](https://arxiv.org/abs/2602.01186) | 多机构 / 2026.02 | CoM 感知预训练 + Parseval 残差适配 | [arXiv](https://arxiv.org/abs/2602.01186) |
 | [**XHugWBC**](https://arxiv.org/abs/2602.04485) | 多机构 / 2026.02 | 跨人形平台单策略泛化 | [arXiv](https://arxiv.org/abs/2602.04485) |
 | [MOSAIC](https://arxiv.org/abs/2602.03344) | 多机构 / 2026.02 | 通用运动跟踪 + 快速残差适配 | [arXiv](https://arxiv.org/abs/2602.03344) |
-| [ZEST](https://arxiv.org/abs/2602.03827) | 多机构 / 2026.02 | 零样本具身技能迁移 | [arXiv](https://arxiv.org/abs/2602.03827) |
+| [ZEST](https://arxiv.org/abs/2602.00401) | 多机构 / 2026.02 | 零样本具身技能迁移 | [arXiv](https://arxiv.org/abs/2602.00401) |
 | [ResMimic](https://arxiv.org/abs/2502.20030) | 多机构 / 2025 | 残差学习的全身移动操作 | [arXiv](https://arxiv.org/abs/2502.20030) |
 
 <!-- 更新标记：方向一 最后更新 2026.02 -->

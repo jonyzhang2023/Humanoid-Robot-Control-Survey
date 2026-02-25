@@ -67,7 +67,7 @@ outline: deep
 
 | 项目 | 内容 |
 |------|------|
-| **论文** | [VisualMimic: Visual Humanoid Loco-Manipulation via Motion Tracking and Generation](https://arxiv.org/abs/2509.00000) |
+| **论文** | [VisualMimic: Visual Humanoid Loco-Manipulation via Motion Tracking and Generation](https://arxiv.org/abs/2509.20322) |
 | **发表** | arXiv 2025.09 |
 
 **核心方法：** Sim-to-Real 框架，集成**自我中心视觉感知**和**全身灵巧先验**，实现真实世界人形移动操作。
@@ -85,9 +85,9 @@ outline: deep
 | [**GR00T N1**](https://arxiv.org/abs/2503.14734) | NVIDIA / 2025.03 | 开放基础模型，双系统架构 | [arXiv](https://arxiv.org/abs/2503.14734) |
 | [**ResMimic**](https://arxiv.org/abs/2502.20030) | 多机构 / 2025 | 残差学习全身移动操作 | [arXiv](https://arxiv.org/abs/2502.20030) |
 | [ASAP](https://arxiv.org/abs/2502.01915) | — / RSS 2025 | 对齐仿真与真实物理 | [arXiv](https://arxiv.org/abs/2502.01915) |
-| [VisualMimic](https://arxiv.org/abs/2509.00000) | — / 2025.09 | 视觉人形移动操作 | [arXiv](https://arxiv.org/abs/2509.00000) |
+| [VisualMimic](https://arxiv.org/abs/2509.20322) | — / 2025.09 | 视觉人形移动操作 | [arXiv](https://arxiv.org/abs/2509.20322) |
 | [Coordinated Manipulation](https://arxiv.org/abs/2511.17981) | — / 2025.11 | 模块化遥操作+全身协调 | [arXiv](https://arxiv.org/abs/2511.17981) |
-| [TAMP-HLM](https://arxiv.org/abs/2508.00000) | — / 2025.08 | 任务与运动规划统一框架 | [arXiv](https://arxiv.org/abs/2508.00000) |
+| [TAMP-HLM](https://arxiv.org/abs/2508.14099) | — / 2025.08 | 任务与运动规划统一框架 | [arXiv](https://arxiv.org/abs/2508.14099) |
 | [HLM Survey](https://arxiv.org/abs/2501.02116) | UT Austin / 2025.01 | 人形运动与操控综合综述 | [arXiv](https://arxiv.org/abs/2501.02116) |
 | [Humanoid Hanoi](https://arxiv.org/abs/2602.13850) | 多机构 / 2026.02 | 共享全身控制与重排任务 | [arXiv](https://arxiv.org/abs/2602.13850) |
 | [AdaptManip](https://arxiv.org/abs/2602.14363) | 多机构 / 2026.02 | 自适应全身物体举放估计 | [arXiv](https://arxiv.org/abs/2602.14363) |

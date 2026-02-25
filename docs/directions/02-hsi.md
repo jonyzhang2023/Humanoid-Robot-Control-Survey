@@ -59,7 +59,7 @@ outline: deep
 
 | 项目 | 内容 |
 |------|------|
-| **论文** | [HSI-GPT: General-Purpose Large Scene-Motion-Language Model](https://arxiv.org/abs/2412.00000) |
+| **论文** | [HSI-GPT: General-Purpose Large Scene-Motion-Language Model](https://arxiv.org/abs/2502.02149) |
 | **发表** | **CVPR 2025** |
 
 **核心方法：** 将 LLM 的 **next-token prediction** 范式应用于 HSI——将场景、运动和语言统一为 token 序列。支持 HSI 生成、理解和运动补全等多种任务。
@@ -90,7 +90,7 @@ outline: deep
 | [TeSMo](https://arxiv.org/abs/2404.10685) | — / 2024.04 | 文本控制场景运动生成 | [arXiv](https://arxiv.org/abs/2404.10685) |
 | [InterScene](https://arxiv.org/abs/2405.04219) | — / 2024.05 | 语言指导 3D 场景交互 | [arXiv](https://arxiv.org/abs/2405.04219) |
 | [**PhysHSI**](https://arxiv.org/abs/2502.07747) | 上海交大 / 2025.02 | **首个真实世界人形 HSI** | [arXiv](https://arxiv.org/abs/2502.07747) |
-| [**HSI-GPT**](https://arxiv.org/abs/2412.00000) | — / **CVPR 2025** | 通用场景-运动-语言大模型 | CVPR 2025 |
+| [**HSI-GPT**](https://arxiv.org/abs/2502.02149) | — / **CVPR 2025** | 通用场景-运动-语言大模型 | CVPR 2025 |
 | [HSI Survey](https://arxiv.org/abs/2503.11755) | — / 2025.03 | 人类交互运动生成综述 | [arXiv](https://arxiv.org/abs/2503.11755) |
 | [**MeshMimic**](https://arxiv.org/abs/2602.15733) | 多机构 / 2026.02 | 几何感知的 3D 场景重建与运动学习 | [arXiv](https://arxiv.org/abs/2602.15733) |
 | [ProAct](https://arxiv.org/abs/2602.14048) | 多机构 / 2026.02 | 具身社交智能体的双系统前瞻框架 | [arXiv](https://arxiv.org/abs/2602.14048) |

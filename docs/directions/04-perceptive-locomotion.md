@@ -62,7 +62,7 @@ outline: deep
 
 | 项目 | 内容 |
 |------|------|
-| **论文** | [RPL: Robust Perceptive Locomotion via Depth Distillation](https://arxiv.org/abs/2602.00000) |
+| **论文** | [RPL: Robust Perceptive Locomotion via Depth Distillation](https://arxiv.org/abs/2602.03002) |
 | **发表** | arXiv 2026.02 |
 
 **核心方法：** 两阶段学习——首先训练地形特定专家策略，然后蒸馏为统一的深度策略。
@@ -97,9 +97,9 @@ outline: deep
 | [**HPC**](https://arxiv.org/abs/2503.01048) | PKU 等 / 2025.03 | 7 种户外地形全部验证 | [arXiv](https://arxiv.org/abs/2503.01048) |
 | [Fast Locomotion](https://arxiv.org/abs/2512.03273) | 多机构 / 2025.08 | **15 分钟**训练行走策略 | [arXiv](https://arxiv.org/abs/2512.03273) |
 | [**DPL**](https://arxiv.org/abs/2510.13809) | 多机构 / 2025.10 | 合成深度 + 交叉注意力地形重建 | [arXiv](https://arxiv.org/abs/2510.13809) |
-| [Standing-Up Control](https://arxiv.org/abs/2506.00000) | 多机构 / 2025 | G1 多姿态多地形起立 | [arXiv](https://arxiv.org/abs/2506.00000) |
-| [Torque Perturbation](https://arxiv.org/abs/2510.00000) | 多机构 / 2025 | 力矩扰动注入增强 sim-to-real | [arXiv](https://arxiv.org/abs/2510.00000) |
-| [**RPL**](https://arxiv.org/abs/2602.00000) | 多机构 / 2026.02 | 深度蒸馏多方向运动 | [arXiv](https://arxiv.org/abs/2602.00000) |
+| [Standing-Up Control](https://arxiv.org/abs/2502.08378) | 多机构 / 2025 | G1 多姿态多地形起立 | [arXiv](https://arxiv.org/abs/2502.08378) |
+| [Torque Perturbation](https://arxiv.org/abs/2504.06943) | 多机构 / 2025 | 力矩扰动注入增强 sim-to-real | [arXiv](https://arxiv.org/abs/2504.06943) |
+| [**RPL**](https://arxiv.org/abs/2602.03002) | 多机构 / 2026.02 | 深度蒸馏多方向运动 | [arXiv](https://arxiv.org/abs/2602.03002) |
 | [MOSAIC](https://arxiv.org/abs/2602.03344) | 多机构 / 2026.02 | 快速残差适配 sim-to-real | [arXiv](https://arxiv.org/abs/2602.03344) |
 | [Perceptive Parkour](https://arxiv.org/abs/2602.15827) | 多机构 / 2026.02 | 动态跑酷与动作匹配串联 | [arXiv](https://arxiv.org/abs/2602.15827) |
 | [Sim-to-Real Survey](https://arxiv.org/abs/2507.04542) | — / 2025.07 | 腿式机器人 sim-to-real 综述 | [arXiv](https://arxiv.org/abs/2507.04542) |

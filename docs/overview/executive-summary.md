@@ -23,7 +23,7 @@ outline: deep
 
 1. **Boston Dynamics Atlas 全电动化 + CES 2026 商业版**：液压→全电驱转型，CES 2026 发布商业产品版，2026 全部预定，Hyundai 年产 30K 工厂 $26B 开建
 2. **Sim-to-Real 全面突破**：[ExBody2](https://arxiv.org/abs/2412.13196)（G1/H1 表达性控制）、[HumanPlus](https://arxiv.org/abs/2406.10454)（单 RGB 全身模仿）、[OmniH2O](https://arxiv.org/abs/2406.08858)（多模态遥操作）
-3. **感知移动大规模验证**：[HPC](https://arxiv.org/abs/2503.01048)（7 种户外地形）、[DPL](https://arxiv.org/abs/2510.13809)（纯深度感知）、[RPL](https://arxiv.org/abs/2602.00000)（多方向深度蒸馏 2026）
+3. **感知移动大规模验证**：[HPC](https://arxiv.org/abs/2503.01048)（7 种户外地形）、[DPL](https://arxiv.org/abs/2510.13809)（纯深度感知）、[RPL](https://arxiv.org/abs/2602.03002)（多方向深度蒸馏 2026）
 4. **BFM 范式确立**：[SONIC](https://sonic-humanoid.github.io/)（42M 参数 / 700h 数据）、[BFM Survey v2](https://arxiv.org/abs/2506.20487)、[FAST](https://arxiv.org/abs/2602.01186)（快速适配）、[XHugWBC](https://arxiv.org/abs/2602.04485)（跨平台泛化）
 5. **移动操作爆发**：[VIRAL](https://arxiv.org/abs/2411.09838)（视觉 sim-to-real 70%+）、[ResMimic](https://arxiv.org/abs/2502.20030)（残差学习）
 6. **VLA/LLM 渗透运动控制**：[GR00T N1](https://arxiv.org/abs/2503.14734)（双系统 VLA）、[LangWBC](https://arxiv.org/abs/2504.01974)（语言→全身控制）、[NaVILA](https://arxiv.org/abs/2503.16404)（VLA 导航）

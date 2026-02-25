@@ -55,15 +55,15 @@ outline: deep
 | 43 | LangWBC | 2025.04 | D1 | 清华等 | [arXiv](https://arxiv.org/abs/2504.01974) |
 | 44 | KungfuBot | 2025.06 | D1 | 清华 | [arXiv](https://arxiv.org/abs/2506.00818) |
 | 45 | Fast Locomotion | 2025.08 | D4 | 多机构 | [arXiv](https://arxiv.org/abs/2512.03273) |
-| 46 | VisualMimic | 2025.09 | D3 | 多机构 | [arXiv](https://arxiv.org/abs/2509.00000) |
+| 46 | VisualMimic | 2025.09 | D3 | 多机构 | [arXiv](https://arxiv.org/abs/2509.20322) |
 | 47 | SONIC | 2025.10 | D1 | CMU | [项目页](https://sonic-humanoid.github.io/) |
 | 48 | DPL | 2025.10 | D4 | 多机构 | [arXiv](https://arxiv.org/abs/2510.13809) |
 | 49 | Coordinated Manipulation | 2025.11 | D3 | — | [arXiv](https://arxiv.org/abs/2511.17981) |
 | 50 | FAST | 2026.02 | D1 | 多机构 | [arXiv](https://arxiv.org/abs/2602.01186) |
 | 51 | XHugWBC | 2026.02 | D1 | 多机构 | [arXiv](https://arxiv.org/abs/2602.04485) |
 | 52 | MOSAIC | 2026.02 | D1 | 多机构 | [arXiv](https://arxiv.org/abs/2602.03344) |
-| 53 | ZEST | 2026.02 | D1 | 多机构 | [arXiv](https://arxiv.org/abs/2602.03827) |
-| 54 | RPL | 2026.02 | D4 | 多机构 | [arXiv](https://arxiv.org/abs/2602.00000) |
+| 53 | ZEST | 2026.02 | D1 | 多机构 | [arXiv](https://arxiv.org/abs/2602.00401) |
+| 54 | RPL | 2026.02 | D4 | 多机构 | [arXiv](https://arxiv.org/abs/2602.03002) |
 | 55 | BeyondMimic | 2025.08 | D1 | UC Berkeley | [arXiv](https://arxiv.org/abs/2508.08241) |
 | 56 | ZeST (Skill Transfer) | 2026.02 | D1 | 多机构 | [arXiv](https://arxiv.org/abs/2602.00401) |
 | 57 | Retargeting Matters | 2025.10 | D1 | 多机构 | [arXiv](https://arxiv.org/abs/2510.02252) |

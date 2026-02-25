@@ -16,7 +16,7 @@ outline: deep
 
 4. **中国硬件生态全球领先**：2025 年全球出货前六全部中国企业（Omdia 数据），智元 5100+、宇树 5500+，2026 年预计 10–20 万台
 
-5. **移动操作是产业化关键**：[VIRAL](https://arxiv.org/abs/2411.09838)、[ResMimic](https://arxiv.org/abs/2502.20030)、[VisualMimic](https://arxiv.org/abs/2509.00000) 验证了"边走边做"的连续移动操作
+5. **移动操作是产业化关键**：[VIRAL](https://arxiv.org/abs/2411.09838)、[ResMimic](https://arxiv.org/abs/2502.20030)、[VisualMimic](https://arxiv.org/abs/2509.20322) 验证了"边走边做"的连续移动操作
 
 6. **安全保障是最大瓶颈**：端到端 RL 黑箱性质使其难以提供形式化安全保证，是产业部署核心阻碍
 
