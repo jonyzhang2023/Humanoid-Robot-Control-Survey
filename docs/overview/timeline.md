@@ -47,6 +47,7 @@ outline: deep
 | 2025.03 | [HPC](https://arxiv.org/abs/2503.01048) ⭐ | PKU 等 | 7 种户外地形人形感知行走 |
 | 2025.03 | [NaVILA](https://arxiv.org/abs/2503.16404) | — | VLA 腿式导航 |
 | 2025.06 | [BFM Survey v2](https://arxiv.org/abs/2506.20487) | — | 行为基础模型综述（到 2026.02） |
+| 2025.08 | [BeyondMimic](https://arxiv.org/abs/2508.08241) ⭐ | UC Berkeley | 扩散分类器引导零样本迁移，统一生成模型 |
 | 2025.09 | Figure 02 × BMW **20h 连续作业** ⭐ | Figure AI | 工业长时运行验证 |
 | 2025.10 | [SONIC](https://sonic-humanoid.github.io/) ⭐ | CMU | 42M 参数 / 700h 数据通用控制器 |
 | 2025.12 | **智元全球出货第一**（5100+ 台） ⭐ | AgiBot | 中国企业领跑量产 |
@@ -54,6 +55,7 @@ outline: deep
 | 2026.01 | **1,000+ Optimus Gen3 工厂运行** ⭐ | Tesla | 大规模内部部署 |
 | 2026.01 | **宇树 H2 发布**（飞踢/空翻） | Unitree | 运动能力新高度 |
 | 2026.02 | [FAST](https://arxiv.org/abs/2602.01186) | 多机构 | CoM 感知预训练 + 快速适配 |
+| 2026.02 | [ZEST](https://arxiv.org/abs/2602.00401) ⭐ | 多机构 | 零样本具身技能直接视频迁移真机 |
 | 2026.02 | [XHugWBC](https://arxiv.org/abs/2602.04485) ⭐ | 多机构 | 单策略跨多人形平台泛化 |
 
 > ⭐ 标记为范式转换级别的里程碑。

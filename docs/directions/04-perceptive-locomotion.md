@@ -101,6 +101,7 @@ outline: deep
 | [Torque Perturbation](https://arxiv.org/abs/2510.00000) | 多机构 / 2025 | 力矩扰动注入增强 sim-to-real | [arXiv](https://arxiv.org/abs/2510.00000) |
 | [**RPL**](https://arxiv.org/abs/2602.00000) | 多机构 / 2026.02 | 深度蒸馏多方向运动 | [arXiv](https://arxiv.org/abs/2602.00000) |
 | [MOSAIC](https://arxiv.org/abs/2602.03344) | 多机构 / 2026.02 | 快速残差适配 sim-to-real | [arXiv](https://arxiv.org/abs/2602.03344) |
+| [Perceptive Parkour](https://arxiv.org/abs/2602.15827) | 多机构 / 2026.02 | 动态跑酷与动作匹配串联 | [arXiv](https://arxiv.org/abs/2602.15827) |
 | [Sim-to-Real Survey](https://arxiv.org/abs/2507.04542) | — / 2025.07 | 腿式机器人 sim-to-real 综述 | [arXiv](https://arxiv.org/abs/2507.04542) |
 
 <!-- 更新标记：方向四 最后更新 2026.02 -->
@@ -112,4 +113,4 @@ outline: deep
 | **优势** | 直接决定人形可部署范围；sim-to-real 框架成熟；训练效率飞速提升（15 分钟训练） |
 | **局限** | 极端地形（冰面、深水）不可行；长时运行稳定性待验证；高速奔跑仍是挑战 |
 | **趋势** | 盲 → 感知（混合架构）；训练速度量级提升；深度蒸馏成为标准范式 |
-| **代表方法** | DWL, HPC, DPL, RPL, Blind Locomotion (Berkeley), Fast Locomotion |
+| **代表方法** | DWL, HPC, DPL, RPL, Blind Locomotion, Perceptive Parkour |

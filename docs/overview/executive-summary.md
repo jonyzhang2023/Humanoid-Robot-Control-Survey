@@ -29,12 +29,14 @@ outline: deep
 6. **VLA/LLM 渗透运动控制**：[GR00T N1](https://arxiv.org/abs/2503.14734)（双系统 VLA）、[LangWBC](https://arxiv.org/abs/2504.01974)（语言→全身控制）、[NaVILA](https://arxiv.org/abs/2503.16404)（VLA 导航）
 7. **中国硬件全球称冠**：2025 年全球出货前六全部中国企业，智元 5100+ 全球第一，2026 中国产量预计 10–20 万台
 8. **1000+ Tesla Optimus 工厂部署**：Optimus Gen3 在 Tesla 工厂运行 1000+ 台，目标年产百万台
+9. **零样本迁移与扩散模型控制**：[BeyondMimic](https://arxiv.org/abs/2508.08241) 和 [ZEST](https://arxiv.org/abs/2602.00401) 证明基于纯数据生成的策略可以直接零样本部署到多种真实人形双足上。
 
-**当前最活跃的五个交叉前沿：**
+**当前最活跃的六个交叉前沿：**
 1. **全身控制 × BFM** → 一个策略控制所有运动（SONIC, FAST, XHugWBC）← **2026 最活跃**
 2. **感知移动 × 复杂地形** → 自适应地形感知与鲁棒行走（HPC, DPL, RPL）
 3. **HOI × VLA 基础模型** → 语义驱动的灵巧移动操作（GR00T N1, VIRAL）
 4. **HSI × 真实部署** → 从动画到机器人场景交互（PhysHSI, HSI-GPT）
 5. **导航 × VLA** → 语义理解驱动的长程自主导航（NaVILA, Humanoid-VLA）
+6. **全身控制 × Zero-Shot 迁移** → 彻底抛弃复杂奖励工程，扩散模型端到端直接迁移真机（BeyondMimic, ZEST）
 
 <!-- 更新标记：执行摘要 最后更新 2026.02 -->

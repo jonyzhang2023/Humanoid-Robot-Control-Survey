@@ -92,6 +92,8 @@ outline: deep
 | [**PhysHSI**](https://arxiv.org/abs/2502.07747) | 上海交大 / 2025.02 | **首个真实世界人形 HSI** | [arXiv](https://arxiv.org/abs/2502.07747) |
 | [**HSI-GPT**](https://arxiv.org/abs/2412.00000) | — / **CVPR 2025** | 通用场景-运动-语言大模型 | CVPR 2025 |
 | [HSI Survey](https://arxiv.org/abs/2503.11755) | — / 2025.03 | 人类交互运动生成综述 | [arXiv](https://arxiv.org/abs/2503.11755) |
+| [**MeshMimic**](https://arxiv.org/abs/2602.15733) | 多机构 / 2026.02 | 几何感知的 3D 场景重建与运动学习 | [arXiv](https://arxiv.org/abs/2602.15733) |
+| [ProAct](https://arxiv.org/abs/2602.14048) | 多机构 / 2026.02 | 具身社交智能体的双系统前瞻框架 | [arXiv](https://arxiv.org/abs/2602.14048) |
 
 <!-- 更新标记：方向二 最后更新 2026.02 -->
 
@@ -102,4 +104,4 @@ outline: deep
 | **优势** | 直接服务家庭/办公场景部署；LLM 赋能开放式交互规划；TRUMANS 提供 15h+ 高质量 MoCap 数据 |
 | **局限** | 真实部署仅 PhysHSI 一个工作；动态场景交互困难；接触动力学 sim-to-real 差距大 |
 | **趋势** | 动画 → 真机部署；预定义交互 → LLM/GPT 驱动开放式交互；单任务模型 → 统一多任务模型（HSI-GPT） |
-| **代表方法** | UniHSI, PhysHSI, HSI-GPT, SceneDiffuser, TRUMANS, COINS |
+| **代表方法** | UniHSI, PhysHSI, HSI-GPT, SceneDiffuser, TRUMANS, COINS, MeshMimic |

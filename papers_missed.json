@@ -1,0 +1,176 @@
+[
+  {
+    "id": "2602.00401v1",
+    "title": "ZEST: Zero-shot Embodied Skill Transfer for Athletic Robot Control",
+    "authors": [
+      "Jean Pierre Sleiman",
+      "He Li",
+      "Alphonsus Adu-Bredu",
+      "Robin Deits",
+      "Arun Kumar",
+      "Kevin Bergamin",
+      "Mohak Bhardwaj",
+      "Scott Biddlestone",
+      "Nicola Burger",
+      "Matthew A. Estrada",
+      "Francesco Iacobelli",
+      "Twan Koolen",
+      "Alexander Lambert",
+      "Erica Lin",
+      "M. Eva Mungai",
+      "Zach Nobles",
+      "Shane Rozen-Levy",
+      "Yuyao Shi",
+      "Jiashun Wang",
+      "Jakob Welner",
+      "Fangzhou Yu",
+      "Mike Zhang",
+      "Alfred Rizzi",
+      "Jessica Hodgins",
+      "Sylvain Bertrand",
+      "Yeuhi Abe",
+      "Scott Kuindersma",
+      "Farbod Farshidian"
+    ],
+    "published": "2026-01-30T23:35:02Z",
+    "summary": "Achieving robust, human-like whole-body control on humanoid robots for agile, contact-rich behaviors remains a central challenge, demanding heavy per-skill engineering and a brittle process of tuning controllers. We introduce ZEST (Zero-shot Embodied Skill Transfer), a streamlined motion-imitation framework that trains policies via reinforcement learning from diverse sources -- high-fidelity motion capture, noisy monocular video, and non-physics-constrained animation -- and deploys them to hardware zero-shot. ZEST generalizes across behaviors and platforms while avoiding contact labels, reference or observation windows, state estimators, and extensive reward shaping. Its training pipeline combines adaptive sampling, which focuses training on difficult motion segments, and an automatic curriculum using a model-based assistive wrench, together enabling dynamic, long-horizon maneuvers. We further provide a procedure for selecting joint-level gains from approximate analytical armature values for closed-chain actuators, along with a refined model of actuators. Trained entirely in simulation with moderate domain randomization, ZEST demonstrates remarkable generality. On Boston Dynamics' Atlas humanoid, ZEST learns dynamic, multi-contact skills (e.g., army crawl, breakdancing) from motion capture. It transfers expressive dance and scene-interaction skills, such as box-climbing, directly from videos to Atlas and the Unitree G1. Furthermore, it extends across morphologies to the Spot quadruped, enabling acrobatics, such as a continuous backflip, through animation. Together, these results demonstrate robust zero-shot deployment across heterogeneous data sources and embodiments, establishing ZEST as a scalable interface between biological movements and their robotic counterparts.",
+    "link": "http://arxiv.org/abs/2602.00401v1",
+    "pdf_link": "http://arxiv.org/pdf/2602.00401v1"
+  },
+  {
+    "id": "2508.08241v4",
+    "title": "BeyondMimic: From Motion Tracking to Versatile Humanoid Control via Guided Diffusion",
+    "authors": [
+      "Qiayuan Liao",
+      "Takara E. Truong",
+      "Xiaoyu Huang",
+      "Yuman Gao",
+      "Guy Tevet",
+      "Koushil Sreenath",
+      "C. Karen Liu"
+    ],
+    "published": "2025-08-11T17:55:26Z",
+    "summary": "The human-like form of humanoid robots positions them uniquely to achieve the agility and versatility in motor skills that humans possess. Learning from human demonstrations offers a scalable approach to acquiring these capabilities. However, prior works either produce unnatural motions or rely on motion-specific tuning to achieve satisfactory naturalness. Furthermore, these methods are often motion- or goal-specific, lacking the versatility to compose diverse skills, especially when solving unseen tasks. We present BeyondMimic, a framework that scales to diverse motions and carries the versatility to compose them seamlessly in tackling unseen downstream tasks. At heart, a compact motion-tracking formulation enables mastering a wide range of radically agile behaviors, including aerial cartwheels, spin-kicks, flip-kicks, and sprinting, with a single setup and shared hyperparameters, all while achieving state-of-the-art human-like performance. Moving beyond the mere imitation of existing motions, we propose a unified latent diffusion model that empowers versatile goal specification, seamless task switching, and dynamic composition of these agile behaviors. Leveraging classifier guidance, a diffusion-specific technique for test-time optimization toward novel objectives, our model extends its capability to solve downstream tasks never encountered during training, including motion inpainting, joystick teleoperation, and obstacle avoidance, and transfers these skills zero-shot to real hardware. This work opens new frontiers for humanoid robots by pushing the limits of scalable human-like motor skill acquisition from human motion and advancing seamless motion synthesis that achieves generalization and versatility beyond training setups.",
+    "link": "http://arxiv.org/abs/2508.08241v4",
+    "pdf_link": "http://arxiv.org/pdf/2508.08241v4"
+  },
+  {
+    "id": "2508.19131v2",
+    "title": "ZeST: an LLM-based Zero-Shot Traversability Navigation for Unknown Environments",
+    "authors": [
+      "Shreya Gummadi",
+      "Mateus V. Gasparino",
+      "Gianluca Capezzuto",
+      "Marcelo Becker",
+      "Girish Chowdhary"
+    ],
+    "published": "2025-08-26T15:30:19Z",
+    "summary": "The advancement of robotics and autonomous navigation systems hinges on the ability to accurately predict terrain traversability. Traditional methods for generating datasets to train these prediction models often involve putting robots into potentially hazardous environments, posing risks to equipment and safety. To solve this problem, we present ZeST, a novel approach leveraging visual reasoning capabilities of Large Language Models (LLMs) to create a traversability map in real-time without exposing robots to danger. Our approach not only performs zero-shot traversability and mitigates the risks associated with real-world data collection but also accelerates the development of advanced navigation systems, offering a cost-effective and scalable solution. To support our findings, we present navigation results, in both controlled indoor and unstructured outdoor environments. As shown in the experiments, our method provides safer navigation when compared to other state-of-the-art methods, constantly reaching the final goal.",
+    "link": "http://arxiv.org/abs/2508.19131v2",
+    "pdf_link": "http://arxiv.org/pdf/2508.19131v2"
+  },
+  {
+    "id": "2510.11950v1",
+    "title": "Digital Low-Level RF system for the Linac Electronics Modernization Plan at LCLS",
+    "authors": [
+      "Nashat Sawai",
+      "Jorge Diaz Cruz",
+      "Andy Benwell",
+      "Sonya Hoobler",
+      "Qiang Du",
+      "Shreeharshini Murthy",
+      "Larry Doolittle"
+    ],
+    "published": "2025-10-13T21:23:23Z",
+    "summary": "The LCLS began operations in 2009, utilizing SLAC's normal-conducting (NC) LINAC, which features control equipment dating back to the 1960s and 1980s. The Linac Electronics Modernization Plan (LEMP) aims to replace the legacy control equipment with a system based on the open-source Marble carrier board and Zest+ digitizer board, both of which are used in the LCLS-II HE LLRF system. Adaptation of the LLRF system developed for the continuous-wave (CW) superconducting RF (SRF) LCLS-II to the short-RF pulse NC LCLS includes leveraging the knowledge and experience gained from recent LLRF projects at SLAC and efficiently reusing the core functionality of the hardware and code base developed for previous projects, in collaboration with LBNL, FNAL and JLAB. A prototype has been deployed and tested at station 26-3, demonstrating RF generation/control, interlocks, triggers, and waveform capture. Here, we describe the hardware, firmware and software infrastructure, highlight key features, and present initial test results.",
+    "link": "http://arxiv.org/abs/2510.11950v1",
+    "pdf_link": "http://arxiv.org/pdf/2510.11950v1"
+  },
+  {
+    "id": "2510.02252v1",
+    "title": "Retargeting Matters: General Motion Retargeting for Humanoid Motion Tracking",
+    "authors": [
+      "Joao Pedro Araujo",
+      "Yanjie Ze",
+      "Pei Xu",
+      "Jiajun Wu",
+      "C. Karen Liu"
+    ],
+    "published": "2025-10-02T17:39:04Z",
+    "summary": "Humanoid motion tracking policies are central to building teleoperation pipelines and hierarchical controllers, yet they face a fundamental challenge: the embodiment gap between humans and humanoid robots. Current approaches address this gap by retargeting human motion data to humanoid embodiments and then training reinforcement learning (RL) policies to imitate these reference trajectories. However, artifacts introduced during retargeting, such as foot sliding, self-penetration, and physically infeasible motion are often left in the reference trajectories for the RL policy to correct. While prior work has demonstrated motion tracking abilities, they often require extensive reward engineering and domain randomization to succeed. In this paper, we systematically evaluate how retargeting quality affects policy performance when excessive reward tuning is suppressed. To address issues that we identify with existing retargeting methods, we propose a new retargeting method, General Motion Retargeting (GMR). We evaluate GMR alongside two open-source retargeters, PHC and ProtoMotions, as well as with a high-quality closed-source dataset from Unitree. Using BeyondMimic for policy training, we isolate retargeting effects without reward tuning. Our experiments on a diverse subset of the LAFAN1 dataset reveal that while most motions can be tracked, artifacts in retargeted data significantly reduce policy robustness, particularly for dynamic or long sequences. GMR consistently outperforms existing open-source methods in both tracking performance and faithfulness to the source motion, achieving perceptual fidelity and policy success rates close to the closed-source baseline. Website: https://jaraujo98.github.io/retargeting_matters. Code: https://github.com/YanjieZe/GMR.",
+    "link": "http://arxiv.org/abs/2510.02252v1",
+    "pdf_link": "http://arxiv.org/pdf/2510.02252v1"
+  },
+  {
+    "id": "2506.23662v1",
+    "title": "Zero-Shot Contextual Embeddings via Offline Synthetic Corpus Generation",
+    "authors": [
+      "Philip Lippmann",
+      "Jie Yang"
+    ],
+    "published": "2025-06-30T09:38:50Z",
+    "summary": "Context-aware embedding methods boost retrieval accuracy by conditioning on corpus statistics (e.g., term co-occurrence and topical patterns) extracted from neighboring documents. However, this context-aware approach requires access to the target corpus or requires domain-specific finetuning, posing practical barriers in privacy-sensitive or resource-constrained settings. We present ZEST, a zero-shot contextual adaptation framework that replaces real corpus access with a one-time offline synthesis of a compact proxy. Given only a handful exemplar documents representative of the general target domain, we use a multi-step hierarchical procedure to generate a synthetic context corpus of several hundred documents that aims to emulate key domain-specific distributions. At inference, the frozen context-aware encoder uses this proxy corpus -- without any finetuning or target corpus access -- to produce domain-adapted embeddings. Across the MTEB benchmark, ZEST's zero-shot synthetic context adaptation using only five example documents performs within 0.5% of models leveraging full target corpus access -- demonstrating remarkable efficacy without any retraining. ZEST thus provides a practical method for deploying high-performance, adaptable embeddings in constrained environments.",
+    "link": "http://arxiv.org/abs/2506.23662v1",
+    "pdf_link": "http://arxiv.org/pdf/2506.23662v1"
+  },
+  {
+    "id": "2506.00980v1",
+    "title": "LEMONADE: A Large Multilingual Expert-Annotated Abstractive Event Dataset for the Real World",
+    "authors": [
+      "Sina J. Semnani",
+      "Pingyue Zhang",
+      "Wanyue Zhai",
+      "Haozhuo Li",
+      "Ryan Beauchamp",
+      "Trey Billing",
+      "Katayoun Kishi",
+      "Manling Li",
+      "Monica S. Lam"
+    ],
+    "published": "2025-06-01T12:24:05Z",
+    "summary": "This paper presents LEMONADE, a large-scale conflict event dataset comprising 39,786 events across 20 languages and 171 countries, with extensive coverage of region-specific entities. LEMONADE is based on a partially reannotated subset of the Armed Conflict Location & Event Data (ACLED), which has documented global conflict events for over a decade.   To address the challenge of aggregating multilingual sources for global event analysis, we introduce abstractive event extraction (AEE) and its subtask, abstractive entity linking (AEL). Unlike conventional span-based event extraction, our approach detects event arguments and entities through holistic document understanding and normalizes them across the multilingual dataset. We evaluate various large language models (LLMs) on these tasks, adapt existing zero-shot event extraction systems, and benchmark supervised models. Additionally, we introduce ZEST, a novel zero-shot retrieval-based system for AEL.   Our best zero-shot system achieves an end-to-end F1 score of 58.3%, with LLMs outperforming specialized event extraction models such as GoLLIE. For entity linking, ZEST achieves an F1 score of 45.7%, significantly surpassing OneNet, a state-of-the-art zero-shot baseline that achieves only 23.7%. However, these zero-shot results lag behind the best supervised systems by 20.1% and 37.0% in the end-to-end and AEL tasks, respectively, highlighting the need for further research.",
+    "link": "http://arxiv.org/abs/2506.00980v1",
+    "pdf_link": "http://arxiv.org/pdf/2506.00980v1"
+  },
+  {
+    "id": "2505.17655v1",
+    "title": "Audio-to-Audio Emotion Conversion With Pitch And Duration Style Transfer",
+    "authors": [
+      "Soumya Dutta",
+      "Avni Jain",
+      "Sriram Ganapathy"
+    ],
+    "published": "2025-05-23T09:18:12Z",
+    "summary": "Given a pair of source and reference speech recordings, audio-to-audio (A2A) style transfer involves the generation of an output speech that mimics the style characteristics of the reference while preserving the content and speaker attributes of the source. In this paper, we propose a novel framework, termed as A2A Zero-shot Emotion Style Transfer (A2A-ZEST), that enables the transfer of reference emotional attributes to the source while retaining its speaker and speech contents. The A2A-ZEST framework consists of an analysis-synthesis pipeline, where the analysis module decomposes speech into semantic tokens, speaker representations, and emotion embeddings. Using these representations, a pitch contour estimator and a duration predictor are learned. Further, a synthesis module is designed to generate speech based on the input representations and the derived factors. This entire paradigm of analysis-synthesis is trained purely in a self-supervised manner with an auto-encoding loss. For A2A emotion style transfer, the emotion embedding extracted from the reference speech along with the rest of the representations from the source speech are used in the synthesis module to generate the style translated speech. In our experiments, we evaluate the converted speech on content/speaker preservation (w.r.t. source) as well as on the effectiveness of the emotion style transfer (w.r.t. reference). The proposal, A2A-ZEST, is shown to improve over other prior works on these evaluations, thereby enabling style transfer without any parallel training data. We also illustrate the application of the proposed work for data augmentation in emotion recognition tasks.",
+    "link": "http://arxiv.org/abs/2505.17655v1",
+    "pdf_link": "http://arxiv.org/pdf/2505.17655v1"
+  },
+  {
+    "id": "2505.10447v1",
+    "title": "Zestings of Hopf Algebras",
+    "authors": [
+      "Iván Angiono",
+      "César Galindo",
+      "Giovanny Mora"
+    ],
+    "published": "2025-05-15T16:06:36Z",
+    "summary": "We extend the previously established zesting techniques from fusion categories to general tensor categories. In particular we consider the category of comodules over a Hopf algebra, providing a detailed translation of the categorical zesting construction into explicit Hopf algebraic terms: we show that the associative zesting of the category of comodules yields a coquasi-Hopf algebra whose comodule category is precisely the zested category. We explicitly write the modified multiplication and the associator, as well as the structures involved in the braided case.   For pointed Hopf algebras, we derive concrete formulas for constructing zestings and establish a systematic approach for cyclic group gradings, providing explicit parameterizations of the zesting data.",
+    "link": "http://arxiv.org/abs/2505.10447v1",
+    "pdf_link": "http://arxiv.org/pdf/2505.10447v1"
+  },
+  {
+    "id": "2005.05544v2",
+    "title": "Braided zesting and its applications",
+    "authors": [
+      "Colleen Delaney",
+      "César Galindo",
+      "Julia Plavnik",
+      "Eric C. Rowell",
+      "Qing Zhang"
+    ],
+    "published": "2020-05-12T04:30:19Z",
+    "summary": "We give a rigorous development of the construction of new braided fusion categories from a given category known as zesting. This method has been used in the past to provide categorifications of new fusion rule algebras, modular data, and minimal modular extensions of super-modular categories. Here we provide a complete obstruction theory and parameterization approach to the construction and illustrate its utility with several examples.",
+    "link": "http://arxiv.org/abs/2005.05544v2",
+    "pdf_link": "http://arxiv.org/pdf/2005.05544v2"
+  }
+]

@@ -80,6 +80,7 @@ outline: deep
 | [**Humanoid-VLA**](https://arxiv.org/abs/2502.14795) | — / 2025.02 | 通用人形视觉-语言-动作 | [arXiv](https://arxiv.org/abs/2502.14795) |
 | [**NaVILA**](https://arxiv.org/abs/2503.16404) | — / 2025.03 | VLA 腿式导航 | [arXiv](https://arxiv.org/abs/2503.16404) |
 | [HICS-SLAM](https://arxiv.org/abs/2502.00000) | — / 2025 | 人机协作语义 SLAM | [arXiv](https://arxiv.org/abs/2502.00000) |
+| [ZeST Nav](https://arxiv.org/abs/2508.19131) | 多机构 / 2025.08 | LLM 零样本可通行性导航 | [arXiv](https://arxiv.org/abs/2508.19131) |
 
 <!-- 更新标记：方向五 最后更新 2026.02 -->
 

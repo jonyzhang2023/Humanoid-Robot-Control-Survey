@@ -89,6 +89,11 @@ outline: deep
 | [Coordinated Manipulation](https://arxiv.org/abs/2511.17981) | — / 2025.11 | 模块化遥操作+全身协调 | [arXiv](https://arxiv.org/abs/2511.17981) |
 | [TAMP-HLM](https://arxiv.org/abs/2508.00000) | — / 2025.08 | 任务与运动规划统一框架 | [arXiv](https://arxiv.org/abs/2508.00000) |
 | [HLM Survey](https://arxiv.org/abs/2501.02116) | UT Austin / 2025.01 | 人形运动与操控综合综述 | [arXiv](https://arxiv.org/abs/2501.02116) |
+| [Humanoid Hanoi](https://arxiv.org/abs/2602.13850) | 多机构 / 2026.02 | 共享全身控制与重排任务 | [arXiv](https://arxiv.org/abs/2602.13850) |
+| [AdaptManip](https://arxiv.org/abs/2602.14363) | 多机构 / 2026.02 | 自适应全身物体举放估计 | [arXiv](https://arxiv.org/abs/2602.14363) |
+| [Vis Loco-Manipulation](https://arxiv.org/abs/2602.16705) | 多机构 / 2026.02 | 开放词汇视觉感知抓取 | [arXiv](https://arxiv.org/abs/2602.16705) |
+| [Dexterous Grasping](https://arxiv.org/abs/2602.20915) | 多机构 / 2026.02 | 任务导向的灵巧抓取 | [arXiv](https://arxiv.org/abs/2602.20915) |
+| [LapSurgie](https://arxiv.org/abs/2510.03529) | 多机构 / 2025.10 | 人形机器人遥操作腹腔镜手术 | [arXiv](https://arxiv.org/abs/2510.03529) |
 
 <!-- 更新标记：方向三 最后更新 2026.02 -->
 
@@ -99,4 +104,4 @@ outline: deep
 | **优势** | 直接服务工业/家庭应用；VR 遥操作使高质量数据采集成为可能；VLA 基础模型开启预训练新范式 |
 | **局限** | 上下半身协调是核心瓶颈；灵巧手硬件成本高；柔性物体操控（衣物/绳索）仍是重大挑战 |
 | **趋势** | 分段式 → 连续移动操作；视觉 Sim-to-Real 日益成熟；VLA 基础模型（GR00T N1）开启新范式 |
-| **代表方法** | VIRAL, GR00T N1, H2O, OmniH2O, TRILL, ResMimic, VisualMimic |
+| **代表方法** | VIRAL, GR00T N1, H2O, OmniH2O, TRILL, ResMimic, AdaptManip, LapSurgie |

@@ -64,6 +64,19 @@ outline: deep
 | 52 | MOSAIC | 2026.02 | D1 | 多机构 | [arXiv](https://arxiv.org/abs/2602.03344) |
 | 53 | ZEST | 2026.02 | D1 | 多机构 | [arXiv](https://arxiv.org/abs/2602.03827) |
 | 54 | RPL | 2026.02 | D4 | 多机构 | [arXiv](https://arxiv.org/abs/2602.00000) |
+| 55 | BeyondMimic | 2025.08 | D1 | UC Berkeley | [arXiv](https://arxiv.org/abs/2508.08241) |
+| 56 | ZeST (Skill Transfer) | 2026.02 | D1 | 多机构 | [arXiv](https://arxiv.org/abs/2602.00401) |
+| 57 | Retargeting Matters | 2025.10 | D1 | 多机构 | [arXiv](https://arxiv.org/abs/2510.02252) |
+| 58 | LapSurgie | 2025.10 | D3 | 多机构 | [arXiv](https://arxiv.org/abs/2510.03529) |
+| 59 | Fast Adaptation WBC | 2026.02 | D1 | 多机构 | [arXiv](https://arxiv.org/abs/2602.11929) |
+| 60 | Humanoid Hanoi | 2026.02 | D3 | 多机构 | [arXiv](https://arxiv.org/abs/2602.13850) |
+| 61 | ProAct | 2026.02 | D2 | 多机构 | [arXiv](https://arxiv.org/abs/2602.14048) |
+| 62 | AdaptManip | 2026.02 | D3 | 多机构 | [arXiv](https://arxiv.org/abs/2602.14363) |
+| 63 | MeshMimic | 2026.02 | D2 | 多机构 | [arXiv](https://arxiv.org/abs/2602.15733) |
+| 64 | Perceptive Parkour | 2026.02 | D4 | 多机构 | [arXiv](https://arxiv.org/abs/2602.15827) |
+| 65 | Vis Loco-Manipulation | 2026.02 | D3 | 多机构 | [arXiv](https://arxiv.org/abs/2602.16705) |
+| 66 | Dexterous Grasping | 2026.02 | D3 | 多机构 | [arXiv](https://arxiv.org/abs/2602.20915) |
+| 67 | ZeST Nav | 2025.08 | D5 | 多机构 | [arXiv](https://arxiv.org/abs/2508.19131) |
 
 ## 二、综述论文索引
 
