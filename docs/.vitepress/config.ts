@@ -1,15 +1,15 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: '世界模型研究报告',
-  description: '世界模型（World Model）完整研究报告 — 覆盖 1943–2026 年，~200 篇论文，9 大研究方向',
+  title: '人形机器人运动控制研究报告',
+  description: '人形机器人运动控制完整研究报告 — 覆盖 2016–2026 年，~150 篇论文，5 大研究方向',
   lang: 'zh-CN',
-  base: '/world-model-survey/',
+  base: '/Humanoid-Robot-Control-Survey/',
   lastUpdated: true,
   cleanUrls: true,
 
   head: [
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/world-model-survey/favicon.svg' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/Humanoid-Robot-Control-Survey/favicon.svg' }],
   ],
 
   markdown: {
@@ -18,7 +18,7 @@ export default defineConfig({
 
   themeConfig: {
     logo: '/favicon.svg',
-    siteTitle: '世界模型研究',
+    siteTitle: '人形机器人运动控制',
 
     search: {
       provider: 'local',
@@ -39,25 +39,16 @@ export default defineConfig({
       {
         text: '研究方向',
         items: [
-          { text: '① 强化学习', link: '/directions/01-reinforcement-learning' },
-          { text: '② 视频生成', link: '/directions/02-video-generation' },
-          { text: '③ 自动驾驶', link: '/directions/03-autonomous-driving' },
-          { text: '④ 具身 AI', link: '/directions/04-embodied-ai' },
-          { text: '⑤ LLM 世界模型', link: '/directions/05-llm' },
-          { text: '⑥ JEPA', link: '/directions/06-jepa' },
-          { text: '⑦ 交互式游戏', link: '/directions/07-interactive-games' },
-          { text: '⑧ 3D/4D', link: '/directions/08-3d-4d' },
-          { text: '⑨ 领域特定', link: '/directions/09-domain-specific' },
+          { text: '① 通用全身控制', link: '/directions/01-whole-body-control' },
+          { text: '② 人-场景交互 (HSI)', link: '/directions/02-hsi' },
+          { text: '③ 人-物交互 (HOI)', link: '/directions/03-hoi' },
+          { text: '④ 感知移动', link: '/directions/04-perceptive-locomotion' },
+          { text: '⑤ 感知导航', link: '/directions/05-perceptive-navigation' },
         ],
       },
       { text: '生态', link: '/ecosystem/enterprises' },
       { text: '分析', link: '/analysis/tech-comparison' },
       { text: '附录', link: '/appendix' },
-      {
-        text: '📄 完整版下载',
-        link: 'https://joenhune.github.io/world-model-survey/%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B%E5%AE%8C%E6%95%B4%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A.md',
-        target: '_blank',
-      },
     ],
 
     sidebar: [
@@ -66,23 +57,19 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: '执行摘要', link: '/overview/executive-summary' },
-          { text: '什么是世界模型？', link: '/overview/definition' },
+          { text: '什么是人形机器人运动控制？', link: '/overview/definition' },
           { text: '发展历程与时间线', link: '/overview/timeline' },
         ],
       },
       {
-        text: '第二部分：九大研究方向',
+        text: '第二部分：五大研究方向',
         collapsed: false,
         items: [
-          { text: '① 强化学习世界模型', link: '/directions/01-reinforcement-learning' },
-          { text: '② 视频生成 × 世界模拟', link: '/directions/02-video-generation' },
-          { text: '③ 自动驾驶世界模型', link: '/directions/03-autonomous-driving' },
-          { text: '④ 具身 AI 世界模型', link: '/directions/04-embodied-ai' },
-          { text: '⑤ LLM × 世界模型', link: '/directions/05-llm' },
-          { text: '⑥ JEPA 与表征预测', link: '/directions/06-jepa' },
-          { text: '⑦ 交互式游戏', link: '/directions/07-interactive-games' },
-          { text: '⑧ 3D/4D 几何感知', link: '/directions/08-3d-4d' },
-          { text: '⑨ 领域特定', link: '/directions/09-domain-specific' },
+          { text: '① 通用全身控制', link: '/directions/01-whole-body-control' },
+          { text: '② 人-场景交互 (HSI)', link: '/directions/02-hsi' },
+          { text: '③ 人-物交互 (HOI)', link: '/directions/03-hoi' },
+          { text: '④ 感知移动', link: '/directions/04-perceptive-locomotion' },
+          { text: '⑤ 感知导航', link: '/directions/05-perceptive-navigation' },
         ],
       },
       {
@@ -126,7 +113,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/JoenHune/world-model-survey' },
+      { icon: 'github', link: 'https://github.com/jonyzhang2023/Humanoid-Robot-Control-Survey' },
     ],
 
     footer: {

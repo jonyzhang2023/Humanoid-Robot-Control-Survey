@@ -4,44 +4,48 @@ outline: deep
 
 # 开源生态全景
 
-### 14.1 世界模型核心项目
+人形机器人运动控制领域拥有活跃的开源生态。以下梳理截至 2026 年 2 月的核心开源项目和资源。
 
-| 项目 | 机构 | Stars | 许可证 | 核心特征 | 链接 |
-|------|------|-------|--------|---------|------|
-| **Cosmos** | NVIDIA | ![](https://img.shields.io/github/stars/NVIDIA/Cosmos?style=social) | Apache 2.0 | 物理世界基础模型，预训练+微调全链路 | [GitHub](https://github.com/NVIDIA/Cosmos) |
-| **CogVideoX** | 智谱 AI / 清华 | ![](https://img.shields.io/github/stars/THUDM/CogVideo?style=social) | Apache 2.0 | 全链路开源视频生成（训练+推理+数据） | [GitHub](https://github.com/THUDM/CogVideo) |
-| **Wan2.1** | 阿里巴巴 | ![](https://img.shields.io/github/stars/Wan-Video/Wan2.1?style=social) | Apache 2.0 | 1.3B–14B 多规模视频生成 | [GitHub](https://github.com/Wan-Video/Wan2.1) |
-| **HunyuanVideo** | 腾讯 | ![](https://img.shields.io/github/stars/Tencent/HunyuanVideo?style=social) | Tencent | 高质量长视频生成 | [GitHub](https://github.com/Tencent/HunyuanVideo) |
-| **SkyReels-V2** | 昆仑万维 | ![](https://img.shields.io/github/stars/SkyworkAI/SkyReels-V2?style=social) | Apache 2.0 | 无限时长视频+物理世界模型 | [GitHub](https://github.com/SkyworkAI/SkyReels-V2) |
-| **DreamerV3** | Danijar Hafner | ![](https://img.shields.io/github/stars/danijar/dreamerv3?style=social) | MIT | 通用强化学习世界模型 | [GitHub](https://github.com/danijar/dreamerv3) |
-| **DIAMOND** | Microsoft | ![](https://img.shields.io/github/stars/eloialonso/diamond?style=social) | MIT | 扩散世界模型玩 Atari | [GitHub](https://github.com/eloialonso/diamond) |
-| **AniSora** | 哔哩哔哩 | ![](https://img.shields.io/github/stars/bilibili/Index-anisora?style=social) | Apache 2.0 | 动漫可控视频生成 | [GitHub](https://github.com/bilibili/Index-anisora) |
-| **LWM** | UC Berkeley | ![](https://img.shields.io/github/stars/LargeWorldModel/LWM?style=social) | Apache 2.0 | 大世界模型（百万 token 上下文） | [GitHub](https://github.com/LargeWorldModel/LWM) |
+### 14.1 仿真平台
 
-### 14.2 上游基础设施
+| 项目 | 机构 | 许可证 | 特色 | 链接 |
+|------|------|--------|------|------|
+| **Isaac Lab** | NVIDIA | Apache-2.0 | GPU 加速大规模并行仿真，支持 RL 训练 | [GitHub](https://github.com/isaac-sim/IsaacLab) |
+| **MuJoCo** | DeepMind | Apache-2.0 | 高精度接触动力学，学术界标准 | [GitHub](https://github.com/google-deepmind/mujoco) |
+| **Genesis** | 多机构 | Apache-2.0 | 通用物理仿真平台，支持多种机器人 | [GitHub](https://github.com/Genesis-Embodied-AI/Genesis) |
+| **SAPIEN** | 上海 AI Lab | MIT | 操作仿真平台，丰富的物体资产 | [GitHub](https://github.com/haosulab/SAPIEN) |
 
-| 项目 | 功能 | 链接 |
-|------|------|------|
-| **Diffusers** (HuggingFace) | 扩散模型标准库，支持 DiT/Flow Matching | [GitHub](https://github.com/huggingface/diffusers) |
-| **xDiT** | DiT 模型分布式推理加速 | [GitHub](https://github.com/xdit-project/xDiT) |
-| **Open-Sora** (HPC-AI Tech) | Sora 复现框架 | [GitHub](https://github.com/hpcaitech/Open-Sora) |
-| **Open-Sora-Plan** (PKU) | Sora 复现计划 | [GitHub](https://github.com/PKU-YuanGroup/Open-Sora-Plan) |
-| **Gymnasium** (Farama) | RL 环境标准接口 | [GitHub](https://github.com/Farama-Foundation/Gymnasium) |
-| **MineRL** | Minecraft RL 环境 | [GitHub](https://github.com/minerllabs/minerl) |
+### 14.2 运动控制代码库
 
-### 14.3 开源成熟度评估
+| 项目 | 功能 | Stars | 链接 |
+|------|------|-------|------|
+| **legged_gym** | Unitree 腿式机器人 RL 训练基准 | 1.5k+ | [GitHub](https://github.com/leggedrobotics/legged_gym) |
+| **humanoid-gym** | 人形机器人特化的 RL 训练框架 | 1k+ | [GitHub](https://github.com/roboterax/humanoid-gym) |
+| **OmniH2O** | 全身遥操作+数据集 | 500+ | [GitHub](https://github.com/LeCAR-Lab/OmniH2O) |
+| **HumanPlus** | 全栈人形模仿系统 | 1k+ | [GitHub](https://github.com/MarkFzp/humanplus) |
+| **ExBody** | 表达性全身控制 | 400+ | [GitHub](https://github.com/chengxuxin/expressive-humanoid) |
+| **PHC** | 永续人形控制器 | 800+ | [GitHub](https://github.com/ZhengyiLuo/PHC) |
+| **AMP** | 对抗运动先验 | 700+ | [GitHub](https://github.com/nv-tlabs/ASE) |
 
-| 维度 | 🟢 成熟 | 🟡 发展中 | 🔴 早期 |
-|------|---------|----------|---------|
-| **视频生成** | CogVideoX、Wan2.1（全链路） | HunyuanVideo（推理为主） | Sora（未开源） |
-| **RL 世界模型** | DreamerV3、DIAMOND | TD-MPC2 | Dreamer V4（未开源） |
-| **自动驾驶** | — | Vista（部分开源） | GAIA 系列（未开源） |
-| **具身 AI** | — | — | 多数为论文复现 |
-| **物理基座** | Cosmos（全栈开源） | — | — |
-| **JEPA** | — | V-JEPA（权重开放） | V-JEPA 2（未开源） |
+### 14.3 人体运动数据集
 
-**开源趋势**：
-- 中国机构（阿里、腾讯、智谱、昆仑万维）在视频生成方向的开源力度全球领先
-- NVIDIA Cosmos 定义了"预训练基座 + 领域微调"的开源范式
-- RL 世界模型开源生态最为成熟（DreamerV3 可直接复现）
-- 具身 AI 和自动驾驶方向开源严重不足，制约社区发展
+| 数据集 | 规模 | 特色 | 链接 |
+|--------|------|------|------|
+| **AMASS** | 40+ 小时 | 统一格式的大规模 MoCap 数据集，覆盖 300+ 受试者 | [Project](https://amass.is.tue.mpg.de/) |
+| **Motion-X** | 13M+ 帧 | 大规模多模态运动数据（文本+语音+MoCap） | [GitHub](https://github.com/IDEA-Research/Motion-X) |
+| **OmniH2O-6** | 6 种场景 | 人形全身控制数据集 | [Project](https://human2humanoid.com/) |
+| **CMU MoCap** | 2605 trials | 经典运动捕捉数据库 | [Project](http://mocap.cs.cmu.edu/) |
+
+### 14.4 学术论文列表
+
+| 项目 | 维护者 | 特色 | 链接 |
+|------|--------|------|------|
+| **awesome-humanoid-robot-learning** | 社区 | 最全面的人形机器人学习论文列表 | [GitHub](https://github.com/jonyzhang2023/awesome-humanoid-robot-learning) |
+| **Awesome-Humanoid-Manipulation** | 社区 | 人形操控专题论文列表 | [GitHub](https://github.com/OpenRobotLab/Awesome-Humanoid-Manipulation) |
+
+### 14.5 模型与权重
+
+| 模型 | 机构 | 许可证 | 特色 |
+|------|------|--------|------|
+| **GR00T N1** | NVIDIA | 开放权重 | 人形机器人通用基础模型 |
+| **π₀** | Physical Intelligence | 研究许可 | Flow Matching VLA 基础模型 |

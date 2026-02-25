@@ -1,22 +1,23 @@
 {
-  "name": "world-model-survey",
+  "name": "humanoid-robot-control-survey",
   "version": "1.0.0",
-  "description": "世界模型（World Model）完整研究报告",
+  "description": "人形机器人运动控制完整研究报告",
   "type": "module",
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs",
-    "merge": "bash scripts/merge.sh"
+    "docs:preview": "vitepress preview docs"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JoenHune/world-model-survey.git"
+    "url": "git+https://github.com/jonyzhang2023/Humanoid-Robot-Control-Survey.git"
   },
   "keywords": [
-    "world-model",
+    "humanoid-robot",
+    "motion-control",
     "survey",
-    "research"
+    "reinforcement-learning",
+    "sim-to-real"
   ],
   "author": "",
   "license": "MIT",
